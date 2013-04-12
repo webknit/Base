@@ -17,12 +17,12 @@ View the website at www.base.webknit.co.uk
 SASS @imports
 -------------
 
-Base-elements - Headers, lists, blockquotes, paragraphs, img
-Colours-gradients - List of site colours, gradients
-Font-face - Includes @font face code
-Forms - Form styles
-Links - Hyperlinks, buttons, header links
-Mixins - Includes all SASS mixins
+- Base-elements - Headers, lists, blockquotes, paragraphs, img
+- Colours-gradients - List of site colours, gradients
+- Font-face - Includes @font face code
+- Forms - Form styles
+- Links - Hyperlinks, buttons, header links
+- Mixins - Includes all SASS mixins
 
 Log
 ---
