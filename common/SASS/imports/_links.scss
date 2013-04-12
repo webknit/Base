@@ -1,0 +1,96 @@
+/* - BASE HTML TEMPLATEs
+------------------------------------------------- 
+	Description: Mixins
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- LINKS ................................ 1.0.
+		- Base link styles ................. 1.1.
+		- Header links ..................... 1.2.
+	- BUTTONS .............................. 2.0.
+*/
+
+
+/*********************************************
+	- 1.0 -  LINKS
+*********************************************/
+
+	/* - 1.1. - BASE LINK STYLES
+	------------------------------------------ */
+
+	a {
+		color:lighten($standard, 40%);
+		text-decoration:none;
+		outline: 0;
+		&:visited {
+			color:lighten($standard, 40%);
+		}
+		&:hover {
+			color:$link-hover;
+			text-decoration:none;
+		}
+		&:active {
+			
+		}
+		&:focus {
+			
+		}
+		/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+		&:focus,
+		&:active {
+			outline: none;
+		}
+	}
+	
+	
+	/* - 1.2. - HEADER LINKS 
+	------------------------------------------ */
+	
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		color: $header;
+	}
+
+
+/*********************************************
+	- 2.0 -  BUTTONS
+*********************************************/
+
+	a.button {
+	    border:1px solid #535050;
+	    color: #FFFFFF;
+	    display: inline-block;
+	    float: left;
+	    margin-bottom: 10px;
+	    outline: 0 none;
+	    padding: 7px 15px 7px;
+	    width: auto;
+	    @include border-radius (3px);
+	    @include button-gradient;
+	    &:hover {
+			color: #ffffff;
+			text-decoration: none;
+			@include button-gradient-hover;
+		}
+		&:active {
+			opacity:0.9;
+		}
+	}
+	
+	a.button-full-width {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		text-align: center; 
+		width: 100%;
+	}
+	
+	/* Fix for odd Mozilla border & padding issues */
+	button::-moz-focus-inner,
+	input::-moz-focus-inner {
+	    border: 0;
+	    padding: 0;
+	}

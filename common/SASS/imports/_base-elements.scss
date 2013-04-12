@@ -1,0 +1,84 @@
+/* - BASE HTML TEMPLATEs
+------------------------------------------------- 
+	Description: Base elements
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- BASE ELEMENTS ........................ 1.0.
+*/
+
+
+/*********************************************
+	- 1.0 -  BASE ELEMENTS
+*********************************************/
+
+	h1,h2,h3,h4 {
+		color: $header;
+		font-family: Geneva, Tahoma, Verdana,  sans-serif;
+		margin:1em 0 0.35em 0;
+	}
+	
+	h1 {
+		font-size:2em;
+	}
+	
+	h2 {
+		font-size:1.75em;
+	}
+	
+	h3 {
+		font-size:1.5em;
+	}
+	h4 {
+		font-size:1.4em;
+	}
+	
+	h5 {
+		font-size:1.3em;
+	}
+	
+	h6 {
+		font-size:1.2em;
+	}
+	
+	small {
+		font-size:0.85em;
+	}
+	
+	ul li {
+		list-style:none;
+	}
+	
+	ol li {
+		list-style:none;
+	}
+	
+	strong, b {
+		font-weight:bold;
+	}
+	
+	em, i {
+		font-style:italic;
+	}
+	
+	p {
+		margin-bottom: 1em
+	}
+	
+	img, object, embed {
+		height: auto;
+		max-width: 100%;
+	}	
+	
+	blockquote {
+		background: #EBEBEB;
+		font-size: 1.1em;
+		font-style: italic;
+		margin: 0 0 20px 20px;
+		padding: 9px 20px 19px;	
+	}

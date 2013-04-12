@@ -1,0 +1,65 @@
+/* - BASE HTML TEMPLATE
+------------------------------------------------- 
+	Description: Min width 1170px
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- GRID LAYOUTS ......................... 1.0.
+*/
+
+/*********************************************
+	- 1.0 -  GRID LAYOUTS
+*********************************************/
+
+	.container {
+		max-width:1170px;
+		margin:0 auto;
+		width: 100%
+	}
+	
+	.one_four, .two_four, .three_four, .four_four,
+	.one_three, .two_three, .three_three,
+	.one_two, .two_two,
+	.two_third, .one_third {
+	    margin-bottom: 10px;
+	    margin-left: 30px;
+	}
+	
+	.one_four, .two_four, .three_four, .four_four {
+	  	width: 270px; 
+	}
+	
+	.one_four {
+	  	margin-left: 0px; 
+	}
+	
+	.one_three, .two_three, .three_three {
+	  	width: 370px; 
+	}
+	
+	.one_three {
+	  	margin-left: 0; 
+	}
+	
+	.one_two, .two_two {
+	  	width: 570px; 
+	}
+	
+	.one_two {
+	  	margin-left: 0; 
+	}
+	
+	.two_third {
+	  	margin-left: 0;
+	  	width: 770px; 
+	}
+	
+	.one_third {
+	  	width: 370px;
+	}
+

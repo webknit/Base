@@ -1,0 +1,55 @@
+/* - BASE HTML TEMPLATEs
+------------------------------------------------- 
+	Description: Forms
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- FORMS ................................ 1.0.
+		- Colours .......................... 1.1.
+	- CONTACT FORM ......................... 2.0.
+*/
+
+
+/*********************************************
+	- 1.0 -  FORMS
+*********************************************/
+
+	/* - 1.1. - BASE ELEMENTS
+	------------------------------------------ */
+
+	input, 
+	textarea {
+		background: white;
+		border: 1px solid #CCC;
+		display: block;
+		margin: 0;
+		margin-bottom: 20px;
+		outline: none;
+		padding: 6px 1%;
+		width: 100%;
+		@include border-radius (2px);
+	}
+	
+	input {
+		max-width:200px;
+	}
+	
+	textarea {
+		max-width: 400px;
+	}
+	
+	textarea,
+	input,
+	.button {
+		@include border-box;
+	}
+	
+
+/*********************************************
+	- 2.0 -  CONTACT FORM
+*********************************************/
