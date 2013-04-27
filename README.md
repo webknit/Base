@@ -1,4 +1,4 @@
-Base V1.2.1
+Base V1.2.2
 ===========
 
 Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project. 
@@ -27,7 +27,7 @@ SASS @imports
 Log
 ---
 
-- V1.2.2 (24/04/2013) - Removing LESS
+- V1.2.2 (24/04/2013) - Removing LESS, new folder structure, cleaning HTML markup
 - V1.2.1 (12/04/2013) - Introducing SASS @import modules
 - V1.2.0 (13/02/2013) - Mobile first
 - V1.1.2 (28/01/2013) - Introducing SASS.

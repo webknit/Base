@@ -10,7 +10,7 @@
 /* - CONTENTS
 -------------------------------------------------
 	- FORMS ................................ 1.0.
-		- Colours .......................... 1.1.
+		- Base Elements .................... 1.1.
 	- CONTACT FORM ......................... 2.0.
 */
 
@@ -24,8 +24,8 @@
 
 	input, 
 	textarea {
-		background: white;
-		border: 1px solid #CCC;
+		background: rgba(255,255,255,1);
+		border: 1px solid rgba(0,0,0,0.2);
 		display: block;
 		margin: 0;
 		margin-bottom: 20px;
