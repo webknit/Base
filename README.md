@@ -6,11 +6,9 @@ Base is a front-end HTML5 template. Featuring the latest technologies and impecc
 Features
 --------
 
-The Base template is packed full of goodies. It includes the HTML5 Boilerplate, Modernizr, jQuery library, Google analytics, media queries, print styles and much more. It is continually updated with the latest technologies and best working practice to ensure that it is the ideal starting base for any web project.
+Base is a CSS/SASS/HTML5 based mobile first front end template which is impeccably neat and tidy and is an ideal starting point for a web project of any size.
 
-The Base template has been created with accessibility in mind. It is as clean as a whistle! The HTML, CSS, LESS and SASS documents are impeccably neat and generously commented so everyone can follow the logic.
-
-The Base template is extremely lightweight and provides web designers everything they could possibly want to start with. Just download the files and start your project. It doesn't get any easier.
+Base is extremely lightweight and is ready to go straight out of the box. Download the files. Choose either CSS/SASS for your stylesheet language and then get coding. The files are impeccably neat and generously commented and they include markup and style examples.
 
 View the website at www.base.webknit.co.uk
 
