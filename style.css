@@ -136,7 +136,7 @@
 	
 	img, object, embed {
 		height: auto;
-		max-width: 100%;
+		max-width: 99%;
 	}
 	
 	blockquote {
@@ -315,7 +315,7 @@
 		 float: left;
 		 height: auto;
 		 overflow: auto;
-		 padding: 1px 5px;
+		 padding: 1px 0.5%;
 		 -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 		 	-moz-box-sizing: border-box; /* Firefox, other Gecko */
 		 		box-sizing: border-box; /* Opera/IE 8+ */ 
