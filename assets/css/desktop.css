@@ -1,6 +1,6 @@
 /* - BASE HTML TEMPLATE
 ------------------------------------------------- 
-	Description: Min width 1170px
+	Description: Min width 1170px - 73.125em
 	Author:Shane Prendergast
 	Author URL:http://www.webknit.co.uk
 	Template URL:http://base.webknit.co.uk/
@@ -17,8 +17,8 @@
 *********************************************/
 
 	.container {
-		max-width:1170px;
-		margin:0 auto;
+		max-width: 73.125em;
+		margin: 0 auto;
 		width: 100%
 	}
 	
@@ -26,20 +26,20 @@
 	.one_three, .two_three, .three_three,
 	.one_two, .two_two,
 	.two_third, .one_third {
-	    margin-bottom: 10px;
-	    margin-left: 30px;
+	    margin-bottom: 0.625em;
+	    margin-left: 1.875em;
 	}
 	
 	.one_four, .two_four, .three_four, .four_four {
-	  	width: 270px; 
+	  	width: 16.875em; 
 	}
 	
 	.one_four {
-	  	margin-left: 0px; 
+	  	margin-left: 0; 
 	}
 	
 	.one_three, .two_three, .three_three {
-	  	width: 370px; 
+	  	width: 23.125em; 
 	}
 	
 	.one_three {
@@ -47,7 +47,7 @@
 	}
 	
 	.one_two, .two_two {
-	  	width: 570px; 
+	  	width: 35.625em; 
 	}
 	
 	.one_two {
@@ -56,10 +56,10 @@
 	
 	.two_third {
 	  	margin-left: 0;
-	  	width: 770px; 
+	  	width: 48.125em; 
 	}
 	
 	.one_third {
-	  	width: 370px;
+	  	width: 23.125em;
 	}
 

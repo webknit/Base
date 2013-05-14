@@ -61,15 +61,15 @@
 *********************************************/
 
 	a.button {
-	    border:1px solid #535050;
+	    border:0.063em solid #535050;
 	    color: #FFFFFF;
 	    display: inline-block;
 	    float: left;
-	    margin-bottom: 10px;
+	    margin-bottom: 0.625em;
 	    outline: 0 none;
-	    padding: 7px 15px 7px;
+	    padding: 0.438em 0.938em;
 	    width: auto;
-	    @include border-radius (3px);
+	    @include border-radius (0.188em);
 	    @include button-gradient;
 	    &:hover {
 			color: #ffffff;

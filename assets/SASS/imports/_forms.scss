@@ -25,22 +25,22 @@
 	input, 
 	textarea {
 		background: rgba(255,255,255,1);
-		border: 1px solid rgba(0,0,0,0.2);
+		border: 0.063em solid rgba(0,0,0,0.2);
 		display: block;
 		margin: 0;
-		margin-bottom: 20px;
+		margin-bottom: 1.250em;
 		outline: none;
-		padding: 6px 1%;
+		padding: 0.375em 1%;
 		width: 100%;
-		@include border-radius (2px);
+		@include border-radius (0.125em);
 	}
 	
 	input {
-		max-width:200px;
+		max-width: 12.500em;
 	}
 	
 	textarea {
-		max-width: 400px;
+		max-width: 25.000em;
 	}
 	
 	textarea,

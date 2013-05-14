@@ -142,7 +142,7 @@
 	.grid .two_third, .grid .one_third {
 		 background: rgba(239,142,128,1);
 		 color: #ffffff;
-		 height: 50px; 
+		 height: 3.125em; 
 	 }
 	 
 	.one_four, .two_four, .three_four, .four_four,
@@ -152,7 +152,7 @@
 		 float: left;
 		 height: auto;
 		 overflow: auto;
-		 padding: 1px 0.5%;
+		 padding: 0.063em 0.5%;
 		 @include border-box; 
 	 }
 	 
@@ -161,7 +161,7 @@
 	 .one_two, .two_two,
 	 .two_third, .one_third {
 	    float: left;
-	    margin-bottom: 10px;
+	    margin-bottom: 0.625em;
 	    margin-left: 0%;
 	    width: 100%; 
 	  }
@@ -180,42 +180,42 @@
 	
 	header {
 		background: rgba(239,142,128,1);
-		height: 200px;
-		padding-top: 30px;
+		height: 12.500em;
+		padding-top: 1.875em;
 		text-align: center;
 	}
 	
 	h1,h2,h3,h4,h5,h6 {
-		border-bottom: 1px dashed rgba(239,142,128,1);
-		margin-bottom: 20px;
+		border-bottom: 0.063em dashed rgba(239,142,128,1);
+		margin-bottom: 1.250em;
 		text-transform: uppercase;
 	}
 	
 	.row {
-		border-top: 5px solid rgba(239,142,128,1);
-		margin: 10px 0;
-		padding: 10px 0;
+		border-top: 0.313em solid rgba(239,142,128,1);
+		margin: 0.625em 0;
+		padding: 0.625em 0;
 		&:first-child {
-			border-top: 0px solid rgba(239,142,128,1);
+			border-top: 0 solid rgba(239,142,128,1);
 		}
 	}
 	
 	footer {
-		border-top: 1px solid rgba(239,142,128,1);
+		border-top: 0.063em solid rgba(239,142,128,1);
 		clear: both;
-		margin: 10px 0;
-		padding: 10px 0;
+		margin: 0.625em 0;
+		padding: 0.625em 0;
 	}
 	
 	.round-corner-box {
-		border:1px solid rgba(239,142,128,1);
-		margin: 5px 0 15px;
-		padding: 10px 15px;
-		@include border-radius (5px);
+		border:0.063em solid rgba(239,142,128,1);
+		margin: 0.313em 0 0.938em;
+		padding: 0.625em 0.938em;
+		@include border-radius (0.313em);
 	}
 	
 	p.text-shadow {
-		text-shadow: 0px 1px 1px red;
+		text-shadow: 0 0.063em 0.063em red;
 	}
 	
 	.animate {

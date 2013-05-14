@@ -25,6 +25,7 @@ SASS @imports
 Log
 ---
 
+- V1.2.3 (14/05/2013) - Moving away from px and onto ems
 - V1.2.2 (24/04/2013) - Removing LESS, new folder structure, cleaning HTML markup
 - V1.2.1 (12/04/2013) - Introducing SASS @import modules
 - V1.2.0 (13/02/2013) - Mobile first
