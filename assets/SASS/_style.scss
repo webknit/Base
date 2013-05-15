@@ -152,7 +152,7 @@
 		 float: left;
 		 height: auto;
 		 overflow: auto;
-		 padding: 0.063em 0.5%;
+		 padding: 1px 0.5%;
 		 @include border-box; 
 	 }
 	 
@@ -186,13 +186,13 @@
 	}
 	
 	h1,h2,h3,h4,h5,h6 {
-		border-bottom: 0.063em dashed rgba(239,142,128,1);
+		border-bottom: 1px dashed rgba(239,142,128,1);
 		margin-bottom: 1.250em;
 		text-transform: uppercase;
 	}
 	
 	.row {
-		border-top: 0.313em solid rgba(239,142,128,1);
+		border-top: 5px solid rgba(239,142,128,1);
 		margin: 0.625em 0;
 		padding: 0.625em 0;
 		&:first-child {
@@ -201,21 +201,21 @@
 	}
 	
 	footer {
-		border-top: 0.063em solid rgba(239,142,128,1);
+		border-top: 1px solid rgba(239,142,128,1);
 		clear: both;
 		margin: 0.625em 0;
 		padding: 0.625em 0;
 	}
 	
 	.round-corner-box {
-		border:0.063em solid rgba(239,142,128,1);
-		margin: 0.313em 0 0.938em;
+		border:1px solid rgba(239,142,128,1);
+		margin: 5px 0 0.938em;
 		padding: 0.625em 0.938em;
-		@include border-radius (0.313em);
+		@include border-radius (5px);
 	}
 	
 	p.text-shadow {
-		text-shadow: 0 0.063em 0.063em red;
+		text-shadow: 0 1px 1px red;
 	}
 	
 	.animate {

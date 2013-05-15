@@ -259,7 +259,7 @@
 	input, 
 	textarea {
 		background: rgba(255,255,255,1);
-		border: 0.063em solid rgba(0,0,0,0.2);
+		border: 1px solid rgba(0,0,0,0.2);
 		display: block;
 		padding: 0.375em 1%;
 		margin: 0;
@@ -315,7 +315,7 @@
 		 float: left;
 		 height: auto;
 		 overflow: auto;
-		 padding: 0.063em 0.5%;
+		 padding: 1px 0.5%;
 		 -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 		 	-moz-box-sizing: border-box; /* Firefox, other Gecko */
 		 		box-sizing: border-box; /* Opera/IE 8+ */ 
@@ -355,13 +355,13 @@
 	}
 	
 	h1,h2,h3,h4 {
-		border-bottom: 0.063em dashed rgba(239,142,128,1);
+		border-bottom: 1px dashed rgba(239,142,128,1);
 		margin-bottom: 1.250em;
 		text-transform: uppercase;
 	}
 	
 	.row {
-		border-top: 0.313em solid rgba(239,142,128,1);
+		border-top: 5px solid rgba(239,142,128,1);
 		margin: 0.625em 0;
 		padding: 0.625em 0;
 	}
@@ -371,23 +371,23 @@
 	}
 	
 	footer {
-		border-top: 0.063em solid rgba(239,142,128,1);
+		border-top: 1px solid rgba(239,142,128,1);
 		clear: both;
 		margin: 0.625em 0;
 		padding: 0.625em 0;
 	}
 	
 	.round-corner-box {
-		border: 0.063em solid rgba(239,142,128,1);
-		margin: 0.313em 0 0.938em;
+		border: 1px solid rgba(239,142,128,1);
+		margin: 5px 0 0.938em;
 		padding: 0.625em 0.938em;
-		-moz-border-radius: 0.313em;
-			-webkit-border-radius: 0.313em;
-				border-radius: 0.313em;
+		-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+				border-radius: 5px;
 	}
 	
 	p.text-shadow {
-		text-shadow: 0 0.063em 0.063em red;
+		text-shadow: 0 1px 1px red;
 	}
 	
 	.animate:hover {
