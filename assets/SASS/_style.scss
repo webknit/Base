@@ -132,8 +132,7 @@
 *********************************************/
 
 	.row {
-		 height: auto;
-		 overflow: auto;
+		 overflow: hidden;
   	}
   	
   	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
@@ -150,8 +149,7 @@
 	.one_two, .two_two,
 	.two_third, .one_third {
 		 float: left;
-		 height: auto;
-		 overflow: auto;
+		 overflow: hidden;
 		 padding: 1px 0.5%;
 		 @include border-box; 
 	 }

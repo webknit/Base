@@ -271,6 +271,10 @@
 				border-radius: 0.125em;
 	}
 	
+	input[type=sumbit] {
+		
+	}
+	
 	input {
 		max-width: 12.500em;
 	}
@@ -295,8 +299,7 @@
 *********************************************/
 	
 	.row {
-		 height: auto;
-		 overflow: auto;
+		 overflow: hidden;
   	}
   	
   	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
@@ -313,8 +316,7 @@
 	.one_two, .two_two,
 	.two_third, .one_third {
 		 float: left;
-		 height: auto;
-		 overflow: auto;
+		 overflow: hidden;
 		 padding: 1px 0.5%;
 		 -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 		 	-moz-box-sizing: border-box; /* Firefox, other Gecko */
