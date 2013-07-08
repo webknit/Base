@@ -13,6 +13,6 @@ $(function()
 
 	var var = $('.var'),
 	
-	// JS CODE
+	// JS
 });
 
