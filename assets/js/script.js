@@ -6,13 +6,39 @@
 	Template URL:http://base.webknit.co.uk/
 */
 
-// SMOOTH SCROLLING
-$(function()
-{
-	'use strict';
+// JS EXAMPLE
 
-	var var = $('.var'),
+var Base = Base || {};
+
+Base.functionName = function()
+{	
+	var window = $(window);
+	var variable = $('.var');
+
+	function init()
+	{
+		variable.click(functionOne);
+		functionTwo();
+	}
+
+	function functionOne()
+	{
+		// JS CODE
+	}
+
+	function functionTwo()
+	{
+		// JS CODE
+		window.hide();
+	}
+
+	init();
+};
+
+// ON DOC READY
+$(function()
+{	
+	new Base.functionName();
 	
-	// JS CODE
-});
+})();
 
