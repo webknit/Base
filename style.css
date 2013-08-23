@@ -136,7 +136,7 @@
 	
 	img, object, embed {
 		height: auto;
-		max-width: 99%;
+		max-width: 100%;
 	}
 	
 	blockquote {
@@ -155,6 +155,7 @@
 	
 	a {
 		color:#222;
+		cursor: pointer;
 		outline: 0;
 		text-decoration:none;
 	}
@@ -269,6 +270,10 @@
 		-moz-border-radius: 0.125em;
 			-webkit-border-radius: 0.125em;
 				border-radius: 0.125em;
+	}
+	
+	input[type=email] {
+		
 	}
 	
 	input[type=submit] {

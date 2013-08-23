@@ -35,6 +35,10 @@
 		@include border-radius (0.125em);
 	}
 	
+	.input[type=email] {
+		
+	}
+	
 	input {
 		max-width: 12.500em;
 	}
