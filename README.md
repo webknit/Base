@@ -25,6 +25,7 @@ SASS @imports
 Log
 ---
 
+- V1.2.4 (14/05/2013) - Updating jQuery to 1.10.2, renaming SASS files, Adding form attributes
 - V1.2.3 (14/05/2013) - Moving away from px and onto ems
 - V1.2.2 (24/04/2013) - Removing LESS, new folder structure, cleaning HTML markup
 - V1.2.1 (12/04/2013) - Introducing SASS @import modules
