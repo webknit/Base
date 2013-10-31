@@ -44,7 +44,6 @@
 	}
 
 
-
 /*********************************************
 	- 3.0 -  GLOBAL
 *********************************************/
@@ -72,7 +71,6 @@
 	}
 	
 	
-
 	/* - 3.2. - BASE ELEMENTS 
 	------------------------------------------ */
 	
@@ -149,7 +147,6 @@
 	}
 
 
-	
 	/* - 3.3. - LINK ELEMENTS 
 	------------------------------------------ */
 	
@@ -243,9 +240,7 @@
 	    padding: 0;
 	}
 	
-
-
-
+	
 	/* - 3.4. - BUILD ELEMENTS 
 	------------------------------------------ */
 	
@@ -291,14 +286,12 @@
 	textarea,
 	input,
 	.button {
-		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-			-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-				box-sizing: border-box;         /* Opera/IE 8+ */
+		-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+				box-sizing: border-box;
 	}
 	
 	
-	
-
 /*********************************************
 	- 4.0 -  MOBILE STYLES
 *********************************************/
@@ -323,9 +316,9 @@
 		 float: left;
 		 overflow: hidden;
 		 padding: 1px 0.5%;
-		 -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-		 	-moz-box-sizing: border-box; /* Firefox, other Gecko */
-		 		box-sizing: border-box; /* Opera/IE 8+ */ 
+		 -webkit-box-sizing: border-box;
+		 	-moz-box-sizing: border-box;
+		 		box-sizing: border-box;
 	 }
 	 
 	 .one_four, .two_four, .three_four, .four_four,
@@ -339,14 +332,9 @@
 	  }
 
 	
-	
-	
-	
-	
 /*********************************************
 	- 5.0 -  EXAMPLE SECTION
 *********************************************/
-
 
 	/* BASE TEMPLATE FILES (THESE CAN BE DELETED AND REPLACED WITH OWN STYLES) 
 	------------------------------------------ */

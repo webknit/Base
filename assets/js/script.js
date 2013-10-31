@@ -12,7 +12,7 @@ var Base = Base || {};
 
 Base.functionName = function()
 {	
-	var window = $(window);
+	var thisThing = $(this);
 	var variable = $('.var');
 
 	function init()
@@ -40,5 +40,5 @@ $(function()
 {	
 	new Base.functionName();
 	
-})();
+});
 
