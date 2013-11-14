@@ -387,9 +387,9 @@
 	
 	.animate:hover {
 		color: green;
-		-moz-transition: color 1s linear 0s; /* Firefox 4 */
-			-webkit-transition: color 1s linear 0s; /* Safari and Chrome */
-				-o-transition: color 1s linear 0s; /* Opera */
+		-moz-transition: color 1s linear 0s;
+			-webkit-transition: color 1s linear 0s;
+				-o-transition: color 1s linear 0s;
 					transition: color 1s linear 0s;
 	}
 	

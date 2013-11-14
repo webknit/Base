@@ -12,7 +12,7 @@ var Base = Base || {};
 
 Base.functionName = function()
 {	
-	var thisThing = $(this);
+	var self = $(this);
 	var variable = $('.var');
 
 	function init()
