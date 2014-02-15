@@ -74,37 +74,39 @@
 	/* - 3.2. - BASE ELEMENTS 
 	------------------------------------------ */
 	
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+	.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
 		color:inherit;
 	}
 	
-	h1,h2,h3,h4 {
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
 		color: #141414;
 		font-family: Geneva, Tahoma, Verdana,  sans-serif;
 		margin: 1em 0 0.35em 0;
 	}
 	
-	h1 {
+	h1, .h1 {
 		font-size: 2em;
 	}
 	
-	h2 {
+	h2, .h2 {
 		font-size: 1.75em;
 	}
 	
-	h3 {
+	h3, .h3 {
 		font-size: 1.5em;
 	}
 	
-	h4 {
+	h4, .h4 {
 		font-size: 1.4em;
 	}
 	
-	h5 {
+	h5, .h5 {
 		font-size: 1.3em;
 	}
 	
-	h6 {
+	h6, .h6 {
 		font-size: 1.2em;
 	}
 	
