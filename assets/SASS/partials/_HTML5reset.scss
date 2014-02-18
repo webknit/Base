@@ -1,0 +1,27 @@
+/* - BASE HTML TEMPLATEs
+------------------------------------------------- 
+	Description: HTML5 Reset
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- HTML5 RESET .......................... 1.0.
+*/
+
+
+/*********************************************
+	- 1.0 -  HTML5 RESET
+*********************************************/
+
+	article, aside, dialog, figure, footer, header, hgroup, nav, section {
+		display:block; 
+		zoom:1;
+	}
+	
+	audio, canvas, video { 
+		display: inline-block; *display: inline; *zoom: 1; 
+	}

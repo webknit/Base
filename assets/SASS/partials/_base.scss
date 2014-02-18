@@ -10,6 +10,7 @@
 /* - CONTENTS
 -------------------------------------------------
 	- BASE ELEMENTS ........................ 1.0.
+	- LINK ELEMENTS ........................ 2.0.
 */
 
 
@@ -84,4 +85,46 @@
 		font-style: italic;
 		margin: 0 0 1.250em 1.250em;
 		padding: 0.625em 1.250em 1.250em;	
+	}
+	
+	
+/*********************************************
+	- 2.0 -  LINKS
+*********************************************/
+
+	/* - 2.1. - BASE LINK STYLES
+	------------------------------------------ */
+
+	a {
+		color:lighten($standard, 40%);
+		cursor: pointer;
+		text-decoration:none;
+		outline: 0;
+		&:visited {
+			color:lighten($standard, 40%);
+		}
+		&:hover {
+			color:$link-hover;
+			text-decoration:none;
+		}
+		&:active {
+			
+		}
+		&:focus {
+			
+		}
+		/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+		&:focus,
+		&:active {
+			outline: none;
+		}
+	}
+	
+	
+	/* - 2.2. - HEADER LINKS 
+	------------------------------------------ */
+	
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+	.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
+		color: $header;
 	}

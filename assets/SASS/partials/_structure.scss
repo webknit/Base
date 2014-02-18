@@ -1,0 +1,41 @@
+/* - BASE HTML TEMPLATEs
+------------------------------------------------- 
+	Description: Structure
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- STRUCTURE ............................ 1.0.
+*/
+
+
+/*********************************************
+	- 1.0 -  STRUCTURE
+*********************************************/
+
+	html { 
+		font-size: 100%; 
+		-webkit-text-size-adjust: 100%; 
+		-ms-text-size-adjust: 100%; 
+	}
+	
+	body {
+		color: $standard;
+		font-family: Geneva, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
+		font-size: 1em;
+		line-height: 1.4;
+		margin: 0;	
+	}
+	
+	.container {
+	    margin: 0 auto;
+	    width: 96%; 
+	}
+	
+	.row {
+		 overflow: hidden;
+  	}

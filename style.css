@@ -70,6 +70,10 @@
 	    width: 96%; 
 	}
 	
+	.row {
+		 overflow: hidden;
+  	}
+	
 	
 	/* - 3.2. - BASE ELEMENTS 
 	------------------------------------------ */
@@ -298,10 +302,6 @@
 	- 4.0 -  MOBILE STYLES
 *********************************************/
 	
-	.row {
-		 overflow: hidden;
-  	}
-  	
   	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
 	.grid .one_three, .grid .two_three, .grid .three_three,
 	.grid .one_two, .grid .two_two,
