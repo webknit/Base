@@ -25,9 +25,9 @@
 	
 	body {
 		color: $standard;
-		font-family: Geneva, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
-		font-size: 1em;
-		line-height: 1.4;
+		font-family: $base-font-family;
+		font-size: $base-font-size;
+		line-height: $base-line-height;
 		margin: 0;	
 	}
 	

@@ -21,7 +21,7 @@
 	h1, h2, h3, h4, h5, h6,
 	.h1, .h2, .h3, .h4, .h5, .h6 {
 		color: $header;
-		font-family: Geneva, Tahoma, Verdana,  sans-serif;
+		font-family: $header-font-family;
 		margin:1em 0 0.35em 0;
 	}
 	
@@ -104,7 +104,7 @@
 			color:lighten($standard, 40%);
 		}
 		&:hover {
-			color:$link-hover;
+			color: $link-hover;
 			text-decoration:none;
 		}
 		&:active {
