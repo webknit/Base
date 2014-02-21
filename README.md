@@ -26,13 +26,13 @@ SASS Partials
 
 The partials directory is where most of the CSS is constructed.
 
-_base.scss - All the base elements, headers, links, img, blockquote etc
-_build.scss - Build elements, reusable code
-_buttons.scss - Button styles
-_font-face.scss - Font face stuff
-_forms.scss - Form styles
-_reset.scss - Reset, including HTML5
-_structure.scss - HTML, body, containers, sections, anything that forms the structure of a site.
+- _base.scss - All the base elements, headers, links, img, blockquote etc
+- _build.scss - Build elements, reusable code
+- _buttons.scss - Button styles
+- _font-face.scss - Font face stuff
+- _forms.scss - Form styles
+- _reset.scss - Reset, including HTML5
+- _structure.scss - HTML, body, containers, sections, anything that forms the structure of a site.
 
 Vendor
 -------------
