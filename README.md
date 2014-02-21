@@ -1,4 +1,4 @@
-Base V2.1.0
+Base V1.3.0
 ===========
 
 Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project. 
@@ -42,7 +42,7 @@ The vendor directory is for third-party CSS.
 Log
 ---
 
-- V2.0.0 (20/02/2014) - Completely reworking SASS, including modules and partials folders
+- V1.3.0 (20/02/2014) - Completely reworking SASS, including modules and partials folders
 - V1.2.4 (14/05/2013) - Updating jQuery to 1.10.2, renaming SASS files, Adding form attributes
 - V1.2.3 (14/05/2013) - Moving away from px and onto ems
 - V1.2.2 (24/04/2013) - Removing LESS, new folder structure, cleaning HTML markup
