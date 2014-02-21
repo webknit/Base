@@ -1,6 +1,6 @@
 /* - BASE HTML TEMPLATE
 ------------------------------------------------- 
-	Description: Main CSS styles
+	Description: Base/Main CSS styles
 	Author:Shane Prendergast
 	Author URL:http://www.webknit.co.uk
 	Template URL:http://base.webknit.co.uk/
@@ -15,8 +15,10 @@
     - Global ............................... 3.0.
     	- Structural ....................... 3.1.
     	- Base Elements .................... 3.2.
-    	- Link Elements .................... 3.2.
-    	- Build Elements ................... 3.3.
+    	- Link Elements .................... 3.3.
+    	- Buttons .......................... 3.4.
+    	- Form ............................. 3.5.
+    	- Build elements ................... 3.6.
     - Mobile styles ........................ 4.0.
     - Example Section ...................... 5.0.
     - @fontface ............................ 0.0.	
@@ -48,7 +50,7 @@
 	- 3.0 -  GLOBAL
 *********************************************/
 	
-	/* - 3.1. - STRUCTURAL, containers, sections
+	/* - 3.1. - STRUCTURAL, CONTAINERS, SECTIONS
 	------------------------------------------ */
 	
 	html { 
@@ -184,6 +186,10 @@
 	a:hover, a:active { 
 		outline: 0;
 	}
+
+
+	/* - 3.4. - BUTTONS 
+	------------------------------------------ */
 	
 	a.button {
 		background-image: linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
@@ -245,19 +251,11 @@
 	    border: 0;
 	    padding: 0;
 	}
-	
-	
-	/* - 3.4. - BUILD ELEMENTS 
+
+
+	/* - 3.5. - FORM ELEMENTS 
 	------------------------------------------ */
-	
-	.hide {
-		display: none;
-	}
-	
-	.center-align {
-		text-align: center;
-	}
-	
+
 	input, 
 	textarea {
 		background: rgba(255,255,255,1);
@@ -295,6 +293,18 @@
 		-webkit-box-sizing: border-box;
 			-moz-box-sizing: border-box;
 				box-sizing: border-box;
+	}
+	
+	
+	/* - 3.4. - BUILD ELEMENTS 
+	------------------------------------------ */
+	
+	.hide {
+		display: none;
+	}
+	
+	.center-align {
+		text-align: center;
 	}
 	
 	

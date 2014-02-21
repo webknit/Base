@@ -1,6 +1,6 @@
 /* - BASE HTML TEMPLATE
 ------------------------------------------------- 
-	Description: Main CSS styles
+	Description: Main/Base CSS styles
 	Author:Shane Prendergast
 	Author URL:http://www.webknit.co.uk
 	Template URL:http://base.webknit.co.uk/
@@ -11,8 +11,8 @@
 /* - CONTENTS
 -------------------------------------------------
 	- SASS modules ......................... 1.0.
-    	- Colours .......................... 1.1.
-    	- Typography ........................1.2.
+    	- Variables ........................ 1.1.
+    	- Functions .........................1.2.
     	- Mixins ............................1.3.
     - CSS Reset ............................ 2.0.
     	- Main reset ........................2.1.
@@ -20,12 +20,9 @@
     	- Base ............................. 3.1.
     	- Buttons ...........................3.2.
     	- Forms ............................ 3.3
-    	- Font Face ........................ 3.4.
-    - Global ............................... 4.0.
-    	- Structural ....................... 4.1.
-    	- Build Elements ................... 4.2.
-    - Mobile grid styles ................... 5.0.
-    - Example section ...................... 6.0.
+    - Mobile grid styles ................... 4.0.
+    - Example section ...................... 5.0.
+    - @font-face ........................... 0.0.
 */
 
 
@@ -33,19 +30,19 @@
 	- 1.0 -  SASS MODULES
 *********************************************/
 
-	/* - 1.1. - COLOURS, BACKGROUNDS, GRADIENTS
+	/* - 1.1. - COLOURS, GRADIENTS, TYPOGRAPHY
 	------------------------------------------ */
 	
-	@import "modules/_colours";
-	
-	
-	/* - 1.2. - TYPOGRAPHY
+	@import "modules/_variables";
+
+
+	/* - 1.2. - FUNCTIONS
 	------------------------------------------ */
 
-	@import "modules/_typography";
+	@import "modules/_functions";
 	
 	
-	/* - 1.3. - MIXINS
+	/* - 1.2. - MIXINS
 	------------------------------------------ */
 
 	@import "modules/_mixins";
@@ -55,7 +52,7 @@
 	- 2.0 -  CSS RESET
 *********************************************/
 
-	/* - 2.1. - RESET INCLUDING HTML5 AND BOILERPLATE
+	/* - 2.1. - RESET INCLUDING HTML5
 	------------------------------------------ */
 	
 	@import "partials/_reset";
@@ -65,7 +62,7 @@
 	- 3.0 -  SASS PARTIALS
 *********************************************/
 	
-	/* - 3.1. - BASE ELEMENTS, TYPOGRAPHY, LINKS
+	/* - 3.1. - BASE ELEMENTS, STRUCTURE, TYPOGRAPHY, LINKS
 	------------------------------------------ */
 	
 	@import "partials/_base";
@@ -81,32 +78,10 @@
 	------------------------------------------ */
 	
 	@import "partials/_forms";
-	
-	
-	/* - 3.4. - FONT-FACE 
-	------------------------------------------ */
-	
-	@import "partials/_font-face";
-	
-	
-/*********************************************
-	- 4.0 -  GLOBAL
-*********************************************/
-	
-	/* - 4.1. - STRUCTURAL, HTML, BODY, CONTAINERS
-	------------------------------------------ */
-	
-	@import "partials/_structure";
-	
-	
-	/* - 4.2. - BUILD ELEMENTS, CONTAINERS, POSITIONING, REUSABLE CLASS NAMES
-	------------------------------------------ */
-	
-	@import "partials/_build";
 
 
 /*********************************************
-	- 5.0 -  MOBILE GRID STYLES
+	- 4.0 -  MOBILE GRID STYLES
 *********************************************/
   	
   	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
@@ -140,7 +115,7 @@
 
 
 /*********************************************
-	- 6.0 -  EXAMPLE SECTION
+	- 5.0 -  EXAMPLE SECTION
 *********************************************/
 	
 	/* BASE TEMPLATE FILES (THESE CAN BE DELETED AND REPLACED WITH OWN STYLES) 
@@ -200,8 +175,11 @@
 	/* BASE TEMPLATE STYLES END */
 
 
-
+/*********************************************
+	- 0.0 -  @FONT-FACE
+*********************************************/
 	
+	@import "partials/_font-face";
 	
 
 

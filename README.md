@@ -17,22 +17,20 @@ SASS Modules
 
 The modules directory is reserved for Sass code that doesn't cause Sass to actually output CSS. Things like mixin declarations, functions, and variables.
 
-- _colours.scss - Every colour & gradient including those on body, buttons, links
+- _variables.scss - Colours, Gradients, Typography.
+- _functions.scss - All the functions go in here
 - _mixins.scss - All the mixins go in here
-- _typography.scss - Typography variables
 
 SASS Partials
 -------------
 
-The partials directory is where most of the CSS is constructed.
+The partials directory is where most of the CSS is constructed. Plan ahead and think how to structure your partials.
 
-- _base.scss - All the base elements, headers, links, img, blockquote etc
-- _build.scss - Build elements, reusable code
-- _buttons.scss - Button styles
-- _font-face.scss - Font face stuff
-- _forms.scss - Form styles
 - _reset.scss - Reset, including HTML5
-- _structure.scss - HTML, body, containers, sections, anything that forms the structure of a site.
+- _base.scss - All the base elements, HTML, body, container, headers, links, img, blockquote etc
+- _buttons.scss - Button styles
+- _forms.scss - Form styles
+- _font-face.scss - Font face stuff
 
 Vendor
 -------------

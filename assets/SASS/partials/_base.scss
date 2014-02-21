@@ -9,13 +9,45 @@
 
 /* - CONTENTS
 -------------------------------------------------
-	- BASE ELEMENTS ........................ 1.0.
-	- LINK ELEMENTS ........................ 2.0.
+	- STRUCTURE ............................ 1.0.
+	- BASE ELEMENTS ........................ 2.0.
+	- LINKS ................................ 3.0.
+		- Base link styles ................. 3.1.
+    	- Header links ..................... 3.2.
+	- BUILD ELEMENTS ....................... 3.0.
 */
 
 
 /*********************************************
-	- 1.0 -  BASE ELEMENTS
+	- 1.0 -  STRUCTURE
+*********************************************/
+
+	html { 
+		font-size: 100%; 
+		-webkit-text-size-adjust: 100%; 
+		-ms-text-size-adjust: 100%; 
+	}
+	
+	body {
+		color: $standard;
+		font-family: $base-font-family;
+		font-size: $base-font-size;
+		line-height: $base-line-height;
+		margin: 0;	
+	}
+	
+	.container {
+	    margin: 0 auto;
+	    width: 96%; 
+	}
+	
+	.row {
+		 overflow: hidden;
+  	}
+
+
+/*********************************************
+	- 2.0 -  BASE ELEMENTS
 *********************************************/
 
 	h1, h2, h3, h4, h5, h6,
@@ -127,4 +159,17 @@
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 	.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
 		color: $header;
+	}
+
+
+/*********************************************
+	- 3.0 -  BUILD ELEMENTS
+*********************************************/
+
+	.hide {
+		display: none;
+	}
+	
+	.center-align {
+		text-align: center;
 	}

@@ -1,0 +1,67 @@
+/* - BASE HTML TEMPLATEs
+------------------------------------------------- 
+	Description: Colours - Gradients
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+/*
+
+
+/* - CONTENTS
+-------------------------------------------------
+	- COLOURS  ............................. 1.0.
+	- GRADIENTS ............................ 2.0.
+	- TYPOGRAPHY  .......................... 3.0.
+    	- Base fonts ....................... 3.1.
+    	- Header fonts ..................... 3.2.
+    	- Font weights ..................... 3.3.
+*/
+
+
+/*********************************************
+	- 1.0 -  COLOURS
+*********************************************/
+
+	$standard: #333333;
+	$header: #141414;
+	$link: #222;
+	$link-hover: red;
+
+	
+/*********************************************
+	- 2.0 -  GRADIENTS
+*********************************************/
+
+	.button-gradient {
+		@include button-gradient;
+	    &:hover {
+			@include button-gradient-hover;
+		}
+	}
+
+
+/*********************************************
+	- 3.0 -  TYPOGRAPHY
+*********************************************/
+
+	/* - 3.1. - BASE FONTS
+	------------------------------------------ */
+	
+	$base-font-family: Geneva, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
+	$base-font-weight: $regular;
+	$base-font-size: 1em;
+	$base-line-height: 1.4;
+	
+	
+	/* - 3.2. - HEADER FONTS
+	------------------------------------------ */
+	
+	$header-font-family: Geneva, Tahoma, Verdana,  sans-serif;
+	
+	
+	/* - 3.3. - FONT WEIGHTS
+	------------------------------------------ */
+
+	$light: 100;
+	$regular: 400;
+	$bold: 600;
