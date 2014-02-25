@@ -81,44 +81,18 @@
 
 
 /*********************************************
-	- 4.0 -  MOBILE GRID STYLES
+	- 4.0 -  GRID STYLES
 *********************************************/
-  	
-  	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
-	.grid .one_three, .grid .two_three, .grid .three_three,
-	.grid .one_two, .grid .two_two,
-	.grid .two_third, .grid .one_third {
-		 background: rgba(239,142,128,1);
-		 color: #ffffff;
-		 height: 3.125em; 
-	 }
-	 
-	.one_four, .two_four, .three_four, .four_four,
-	.one_three, .two_three, .three_three,
-	.one_two, .two_two,
-	.two_third, .one_third {
-		 float: left;
-		 overflow: hidden;
-		 padding: 1px 0.5%;
-		 @include border-box; 
-	 }
-	 
-	 .one_four, .two_four, .three_four, .four_four,
-	 .one_three, .two_three, .three_three,
-	 .one_two, .two_two,
-	 .two_third, .one_third {
-	    float: left;
-	    margin-bottom: 0.625em;
-	    margin-left: 0%;
-	    width: 100%; 
-	  }
+
+	@import "partials/_grid";
 
 
 /*********************************************
 	- 5.0 -  EXAMPLE SECTION
 *********************************************/
 	
-	/* BASE TEMPLATE FILES (THESE CAN BE DELETED AND REPLACED WITH OWN STYLES) 
+	/* BASE TEMPLATE FILES (THESE CAN BE DELETED AND REPLACED WITH OWN STYLES)
+	Consider adding seperate partials for each section of a site header, footer, sidebar
 	------------------------------------------ */
 	
 	p {
@@ -169,6 +143,23 @@
 		@include transition(all, 0.3s, ease-in-out, 0s);
 		&:hover{
 			color: rgba(239,142,128,1);
+		}
+	}
+
+	.example {
+		color: red;
+		@include breakpoint(wide-mobile) {
+			color: blue;
+		}
+		@include breakpoint(tablet) {
+			color: yellow;
+		}
+		@include breakpoint(desktop) {
+			color: green;
+		}
+		@include breakpoint(retina) {
+			background: url(logo2x.jpg) no-repeat;
+			background-size: 212px 303px;
 		}
 	}
 	

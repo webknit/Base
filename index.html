@@ -28,23 +28,16 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 	<link rel="shortcut icon" href="" />
 	
-	<!-- Boilerplate first then onto Base styles (Mobile First) and then other media queries  -->
+	<!-- Single CSS stylesheet with multiple break points - one for the CSS styles of each module where multiple screen sizes need to be addressed.  -->
 	<!-- ems not PX. Calculate here http://pxtoem.com/ -->
-	<link rel="stylesheet" href="assets/css/boilerplate.css" media="screen">
-	<link rel="stylesheet" href="style.css" media="screen">
-	<link rel="stylesheet" href="assets/css/min-30.css" media="only screen and (min-width: 30em)">
-	<link rel="stylesheet" href="assets/css/min-48.css" media="only screen and (min-width: 48em)">
-	<link rel="stylesheet" href="assets/css/desktop.css" media="only screen and (min-width: 73.125em)">
-	<link rel="stylesheet" href="assets/css/high-res.css" media="print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)">
-	
+	<link rel="stylesheet" href="style-new.css" media="screen">
 	
 	<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 	
 	<!-- All JavaScript at the bottom, except this Modernizr build.
 	   Modernizr enables HTML5 elements & feature detects for optimal performance.
 	   Create your own custom Modernizr build: www.modernizr.com/download/ -->
-	<script src="assets/js/libs/modernizr-2.6.2.min.js"></script>
-		
+	<script src="assets/js/libs/modernizr-2.6.2.min.js"></script>	
 	
 	<!--Internet Explorer up to version 8.0 can't read HTML5 tags properly, you can't style them.-->
 	<!--[if lt IE 9]>
