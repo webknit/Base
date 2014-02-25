@@ -20,18 +20,18 @@
 *********************************************/
 
 	@mixin breakpoint($point) {
-	  @if $point == wide-mobile {
-	    @media only screen and (min-width: 30em) { @content; }
-	  }
-	  @else if $point == tablet {
-	    @media only screen and (min-width: 48em) { @content; }
-	  }
-	  @else if $point == desktop {
-	    @media only screen and (min-width: 73.125em) { @content; }
-	  }
-	  @else if $point == retina {
-	    @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { @content; }
-	  }
+		@if $point == wide-mobile {
+			@media only screen and (min-width: 30em) { @content; }
+		}
+		@else if $point == tablet {
+			@media only screen and (min-width: 48em) { @content; }
+		}
+		@else if $point == desktop {
+			@media only screen and (min-width: 73.125em) { @content; }
+		}
+		@else if $point == retina {
+			@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { @content; }
+		}
 	}
 
 	@mixin border-radius($radius) {
