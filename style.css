@@ -461,7 +461,16 @@
 	- 5.0 -  EXAMPLE SECTION
 *********************************************/
 
-	/* BASE TEMPLATE FILES (THESE CAN BE DELETED AND REPLACED WITH OWN STYLES) 
+	/* BASE TEMPLATE FILES (THESE CAN BE DELETED AND REPLACED WITH OWN STYLES)
+	See .example class below to understand how the media queries work
+	
+	Make CSS more scalable and modular. Group your media queries with the rest of the CSS styles.
+	http://smacss.com/
+	
+	Using lots of media queries makes no differnce in speed. 
+	http://presentations.kimberlyblessing.com/2013/rwdsummit/Optimizing%20Media%20Queries.pdf
+	
+	It does make things much neater.
 	------------------------------------------ */
 	p {
 		margin-bottom: 1em;
