@@ -19,7 +19,10 @@
     	- Buttons .......................... 3.4.
     	- Form ............................. 3.5.
     	- Build elements ................... 3.6.
-    - Mobile styles ........................ 4.0.
+    - Mobile grid styles ................... 4.0.
+    	- Wide Mobile ...................... 4.1.
+    	- Tablet ........................... 4.2.
+    	- Desktop .......................... 4.3.
     - Example Section ...................... 5.0.
     - @fontface ............................ 0.0.	
 */
@@ -70,6 +73,14 @@
 	.container {
 	    margin: 0 auto;
 	    width: 96%; 
+	}
+
+	@media only screen and (min-width: 73.125em) {
+		.container {
+			max-width: 73.125em;
+			margin: 0 auto;
+			width: 100%
+		}
 	}
 	
 	.row {
@@ -309,39 +320,141 @@
 	
 	
 /*********************************************
-	- 4.0 -  MOBILE STYLES
+	- 4.0 -  GRID STYLES
 *********************************************/
 	
   	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
 	.grid .one_three, .grid .two_three, .grid .three_three,
 	.grid .one_two, .grid .two_two,
 	.grid .two_third, .grid .one_third {
-		 background: rgba(239,142,128,1);
-		 color: #ffffff;
-		 height: 3.125em; 
-	 }
+		background: rgba(239,142,128,1);
+		color: #ffffff;
+		height: 3.125em; 
+	}
 	 
 	.one_four, .two_four, .three_four, .four_four,
 	.one_three, .two_three, .three_three,
 	.one_two, .two_two,
 	.two_third, .one_third {
-		 float: left;
-		 overflow: hidden;
-		 padding: 1px 0.5%;
-		 -webkit-box-sizing: border-box;
-		 	-moz-box-sizing: border-box;
-		 		box-sizing: border-box;
-	 }
+		float: left;
+		overflow: hidden;
+		padding: 1px 0.5%;
+		-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+				box-sizing: border-box;
+	}
 	 
-	 .one_four, .two_four, .three_four, .four_four,
-	 .one_three, .two_three, .three_three,
-	 .one_two, .two_two,
-	 .two_third, .one_third {
-	    float: left;
-	    margin-bottom: 0.625em;
-	    margin-left: 0%;
-	    width: 100%; 
-	  }
+	.one_four, .two_four, .three_four, .four_four,
+	.one_three, .two_three, .three_three,
+	.one_two, .two_two,
+	.two_third, .one_third {
+		float: left;
+		margin-bottom: 0.625em;
+		margin-left: 0%;
+		width: 100%; 
+	}
+
+	/* - 4.1. - WIDE MOBILE 
+	------------------------------------------ */
+
+	@media only screen and (min-width: 30em) {
+
+	}
+
+
+	/* - 4.2. - TABLET 
+	------------------------------------------ */
+
+	@media only screen and (min-width: 48em) {
+		.one_four, .two_four, .three_four, .four_four,
+		.one_three, .two_three, .three_three,
+		.one_two, .two_two,
+		.two_third, .one_third {
+			float: left;
+			margin-bottom: 0.625em;
+			margin-left: 4%; 
+		}
+
+		.one_four, .two_four, .three_four, .four_four {
+			width: 22%; 
+		}
+
+		.one_four {
+			margin-left: 0%; 
+		}
+
+		.one_three, .two_three, .three_three {
+			width: 30.66667%; 
+		}
+
+		.one_three {
+			margin-left: 0; 
+		}
+
+		.one_two, .two_two {
+			width: 48%; 
+		}
+
+		.one_two {
+			margin-left: 0; 
+		}
+
+		.two_third {
+			margin-left: 0;
+			width: 65%; 
+		}
+
+		.one_third {
+			width: 31%; 
+		}
+	}
+
+
+	/* - 4.3. - DESKTOP 
+	------------------------------------------ */
+
+	@media only screen and (min-width: 73.125em) {
+		.one_four, .two_four, .three_four, .four_four,
+		.one_three, .two_three, .three_three,
+		.one_two, .two_two,
+		.two_third, .one_third {
+		    margin-bottom: 0.625em;
+		    margin-left: 1.875em;
+		}
+		
+		.one_four, .two_four, .three_four, .four_four {
+		  	width: 16.875em; 
+		}
+		
+		.one_four {
+		  	margin-left: 0; 
+		}
+		
+		.one_three, .two_three, .three_three {
+		  	width: 23.125em; 
+		}
+		
+		.one_three {
+		  	margin-left: 0; 
+		}
+		
+		.one_two, .two_two {
+		  	width: 35.625em; 
+		}
+		
+		.one_two {
+		  	margin-left: 0; 
+		}
+		
+		.two_third {
+		  	margin-left: 0;
+		  	width: 48.125em; 
+		}
+		
+		.one_third {
+		  	width: 23.125em;
+		}
+	}
 
 	
 /*********************************************
@@ -403,6 +516,54 @@
 			-webkit-transition: color 1s linear 0s;
 				-o-transition: color 1s linear 0s;
 					transition: color 1s linear 0s;
+	}
+
+	/* - MOBILE 
+	------------------------------------------ */
+
+	.example {
+		color: red;
+	}
+
+	
+	/* - WIDE MOBILE 
+	------------------------------------------ */
+
+	@media only screen and (min-width: 30em) {
+		.example {
+			color: blue;
+		}
+	}
+
+
+	/* - TABLET 
+	------------------------------------------ */
+
+	@media only screen and (min-width: 48em){
+		.example {
+			color: yellow;
+		}
+	}
+
+
+	/* - DESKTOP 
+	------------------------------------------ */
+
+	@media only screen and (min-width: 73.125em){
+		.example {
+			color: green;
+		}
+	}
+
+
+	/* - RETINA 
+	------------------------------------------ */
+
+	@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+		.example {
+			background: url(logo2x.jpg) no-repeat;
+			background-size: 212px 303px;
+		}
 	}
 	
 	/* BASE TEMPLATE STYLES END */
