@@ -462,7 +462,10 @@
 *********************************************/
 
 	/* BASE TEMPLATE FILES (THESE CAN BE DELETED AND REPLACED WITH OWN STYLES)
-	See .example class below to understand how the media queries work
+	You can have a read of this article to understand the structure of the CSS.
+	http://www.shaneprendergast.co.uk/css/base-has-changed/
+	
+	See .example class below to understand how the media queries work. You can remove the comments they are just there to help.
 	
 	Make CSS more scalable and modular. Group your media queries with the rest of the CSS styles.
 	http://smacss.com/
