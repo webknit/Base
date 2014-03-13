@@ -64,7 +64,7 @@
 	
 	body {
 		color: #333333;
-		font-family: Geneva, ‘Lucida Sans’, ‘Lucida Grande’, ‘Lucida Sans Unicode’, Verdana, sans-serif;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
 		font-size: 1em;
 		line-height: 1.4;
 		margin: 0;
@@ -99,7 +99,6 @@
 	h1, h2, h3, h4, h5, h6,
 	.h1, .h2, .h3, .h4, .h5, .h6 {
 		color: #141414;
-		font-family: Geneva, Tahoma, Verdana,  sans-serif;
 		margin: 1em 0 0.35em 0;
 	}
 	
@@ -323,16 +322,8 @@
 	- 4.0 -  GRID STYLES
 *********************************************/
 	
-  	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
-	.grid .one_three, .grid .two_three, .grid .three_three,
-	.grid .one_two, .grid .two_two,
-	.grid .two_third, .grid .one_third {
-		background: rgba(239,142,128,1);
-		color: #ffffff;
-		height: 3.125em; 
-	}
-	 
-	.one_four, .two_four, .three_four, .four_four,
+
+  	.one_four, .two_four, .three_four, .four_four,
 	.one_three, .two_three, .three_three,
 	.one_two, .two_two,
 	.two_third, .one_third {
@@ -480,24 +471,36 @@
 	}
 	
 	header {
-		background: #d8544b;
 		padding: 1em;
+		text-align: center;
+	}
+
+	.intro {
+		background: #d8544b;
+		padding: 5em 0;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+
+	@media only screen and (min-width: 48em){
+		.intro {
+			padding: 10em 0;
+		}
+	}
+
+	.intro h2 {
+		color: #ffffff;
+		margin: 0;
 	}
 	
-	h1,h2,h3,h4 {
+	/*h1,h2,h3,h4 {
 		border-bottom: 1px dashed rgba(239,142,128,1);
 		margin-bottom: 1.250em;
 		text-transform: uppercase;
-	}
+	}*/
 
-	
-	footer {
-		border-top: 1px solid rgba(239,142,128,1);
-		clear: both;
-		margin: 0.625em 0;
-		padding: 0.625em 0;
-	}
-	
 	.round-corner-box {
 		border: 1px solid rgba(239,142,128,1);
 		margin: 5px 0 0.938em;
@@ -517,6 +520,22 @@
 			-webkit-transition: color 1s linear 0s;
 				-o-transition: color 1s linear 0s;
 					transition: color 1s linear 0s;
+	}
+
+	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
+	.grid .one_three, .grid .two_three, .grid .three_three,
+	.grid .one_two, .grid .two_two,
+	.grid .two_third, .grid .one_third {
+		background: #d8544b;
+		color: #ffffff;
+		height: 3.125em; 
+	}
+	
+	footer {
+		border-top: 1px solid #d8544b;
+		clear: both;
+		margin: 0.625em 0;
+		padding: 0.625em 0;
 	}
 
 	/* - MOBILE 
