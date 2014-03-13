@@ -63,7 +63,7 @@
 	}
 	
 	body {
-		color: #444444;
+		color: #333333;
 		font-family: Geneva, ‘Lucida Sans’, ‘Lucida Grande’, ‘Lucida Sans Unicode’, Verdana, sans-serif;
 		font-size: 1em;
 		line-height: 1.4;
@@ -480,10 +480,8 @@
 	}
 	
 	header {
-		background: rgba(239,142,128,1);
-		height: 12.500em;
-		padding-top: 1.875em;
-		text-align: center;
+		background: #d8544b;
+		padding: 1em;
 	}
 	
 	h1,h2,h3,h4 {
@@ -491,16 +489,7 @@
 		margin-bottom: 1.250em;
 		text-transform: uppercase;
 	}
-	
-	.row {
-		border-top: 5px solid rgba(239,142,128,1);
-		margin: 0.625em 0;
-		padding: 0.625em 0;
-	}
-	
-	.row:first-child {
-		border-top: 0 solid rgba(239,142,128,1);
-	}
+
 	
 	footer {
 		border-top: 1px solid rgba(239,142,128,1);
