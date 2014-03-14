@@ -40,11 +40,9 @@
 	    margin: 0 auto;
 	    width: 96%;
 	    @include breakpoint(desktop) {
-			.container {
-				max-width: 73.125em;
-				margin: 0 auto;
-				width: 100%
-			}
+			max-width: 73.125em;
+			margin: 0 auto;
+			width: 100%;
 		}
 	}
 	
@@ -61,6 +59,7 @@
 	.h1, .h2, .h3, .h4, .h5, .h6 {
 		color: $header;
 		font-family: $header-font-family;
+		font-weight: $header-weight;
 		margin:1em 0 0.35em 0;
 	}
 	
@@ -118,12 +117,17 @@
 	}	
 	
 	blockquote {
-		background: rgba(239,142,128,1);
-		color: rgba(225,225,225,1);
+		background: #d8544b;
+		color: #ffffff;
 		font-size: 1.1em;
 		font-style: italic;
 		margin: 0 0 1.250em 1.250em;
-		padding: 0.625em 1.250em 1.250em;	
+		padding: 0.625em 1.250em 1.250em;
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 	
 	
@@ -135,16 +139,15 @@
 	------------------------------------------ */
 
 	a {
-		color:lighten($standard, 40%);
+		color: $link;
 		cursor: pointer;
 		text-decoration:none;
 		outline: 0;
 		&:visited {
-			color:lighten($standard, 40%);
+
 		}
 		&:hover {
 			color: $link-hover;
-			text-decoration:none;
 		}
 		&:active {
 			

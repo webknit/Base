@@ -102,54 +102,90 @@
 	See .example class below to understand how the media queries work
 	------------------------------------------ */
 	
-	p {
-		margin-bottom: 1em;
-	}
-	
 	header {
-		background: rgba(239,142,128,1);
-		height: 12.500em;
-		padding-top: 1.875em;
+		background: #FFFFFF;
+		padding: 1em;
 		text-align: center;
 	}
-	
-	h1,h2,h3,h4,h5,h6 {
-		border-bottom: 1px dashed rgba(239,142,128,1);
-		margin-bottom: 1.250em;
-		text-transform: uppercase;
-	}
-	
-	.row {
-		border-top: 5px solid rgba(239,142,128,1);
-		margin: 0.625em 0;
-		padding: 0.625em 0;
-		&:first-child {
-			border-top: 0 solid rgba(239,142,128,1);
+
+	.intro {
+		background: #d8544b;
+		padding: 5em 0;
+		text-align: center;
+		-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+				box-sizing: border-box;
+		@include breakpoint(tablet) {
+			padding: 10em 0;
+		}
+		h2 {
+			color: #ffffff;
+			margin: 0;
+			@include breakpoint(tablet) {
+				font-size: 3em;
+			}	
 		}
 	}
 	
+	.example-section {
+		.row {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			margin: 0.625em 0;
+			padding: 0.625em 0;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	
+	.round-corner-box {
+		border: 1px solid rgba(239,142,128,1);
+		margin: 5px 0 0.938em;
+		padding: 0.625em 0.938em;
+		-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+				border-radius: 5px;
+	}
+	
+	p.text-shadow {
+		text-shadow: 0 1px 1px #d8544b;
+	}
+	
+	.animate {
+		cursor: pointer;
+		&:hover {
+			color: #d8544b;
+			@include transition(color, 1s, linear, 0s);
+		}
+	}
+
+	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
+	.grid .one_three, .grid .two_three, .grid .three_three,
+	.grid .one_two, .grid .two_two,
+	.grid .two_third, .grid .one_third {
+		background: #d8544b;
+		color: #ffffff;
+		height: 3.125em; 
+	}
+	
 	footer {
-		border-top: 1px solid rgba(239,142,128,1);
+		border-top: 1px solid rgba(0,0,0,0.1);
 		clear: both;
 		margin: 0.625em 0;
 		padding: 0.625em 0;
 	}
 	
-	.round-corner-box {
-		border:1px solid rgba(239,142,128,1);
-		margin: 5px 0 0.938em;
-		padding: 0.625em 0.938em;
-		@include border-radius (5px);
-	}
-	
-	p.text-shadow {
-		text-shadow: 0 1px 1px red;
-	}
-	
-	.animate {
-		@include transition(all, 0.3s, ease-in-out, 0s);
-		&:hover{
-			color: rgba(239,142,128,1);
+	footer {
+		border-top: 1px solid rgba(0,0,0,0.1);
+		clear: both;
+		margin: 0.625em 0;
+		padding: 2em 0;
+		text-align: center;
+		p {
+			@include breakpoint(tablet) {
+				margin: 0 auto 2em;
+				max-width: 60%;
+			}
 		}
 	}
 

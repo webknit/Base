@@ -64,7 +64,7 @@
 	
 	body {
 		color: #333333;
-		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		font-family: Cambria, Georgia, serif;
 		font-size: 1em;
 		line-height: 1.4;
 		margin: 0;
@@ -99,6 +99,8 @@
 	h1, h2, h3, h4, h5, h6,
 	.h1, .h2, .h3, .h4, .h5, .h6 {
 		color: #141414;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-weight: 700;
 		margin: 1em 0 0.35em 0;
 	}
 	
@@ -156,12 +158,16 @@
 	}
 	
 	blockquote {
-		background: rgba(239,142,128,1);
+		background: #d8544b;
 		color: rgba(255,255,255,1);
 		font-size: 1.1em;
 		font-style: italic;
 		margin: 0 0 1.250em 1.250em;
 		padding: 0.625em 1.250em 1.250em;	
+	}
+	
+	blockquote p:last-child {
+		margin-bottom: 0;
 	}
 
 
@@ -169,7 +175,7 @@
 	------------------------------------------ */
 	
 	a {
-		color:#222;
+		color: #d8544b;
 		cursor: pointer;
 		outline: 0;
 		text-decoration:none;
@@ -180,8 +186,7 @@
 	}
 	
 	a:hover {
-		color:#333;
-		text-decoration:none;
+		color: #e2766f;
 	}
 	
 	a:active { 
@@ -202,19 +207,7 @@
 	------------------------------------------ */
 	
 	a.button {
-		background-image: linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
-		background-image: -o-linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
-		background-image: -moz-linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
-		background-image: -webkit-linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
-		background-image: -ms-linear-gradient(bottom, rgb(235,152,141) 37%, rgb(240,136,120) 73%);
-		
-		background-image: -webkit-gradient(
-			linear,
-			left bottom,
-			left top,
-			color-stop(0.37, rgb(235,152,141)),
-			color-stop(0.73, rgb(240,136,120))
-		);
+		background: #d8544b;
 	    color: rgba(255,255,255,1);
 	    display: inline-block;
 	    float: left;
@@ -228,19 +221,7 @@
 	}
 	
 	a.button:hover {
-		background-image: linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
-		background-image: -o-linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
-		background-image: -moz-linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
-		background-image: -webkit-linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
-		background-image: -ms-linear-gradient(bottom, rgb(240,136,120) 37%, rgb(235,152,141) 73%);
-		
-		background-image: -webkit-gradient(
-			linear,
-			left bottom,
-			left top,
-			color-stop(0.37, rgb(240,136,120)),
-			color-stop(0.73, rgb(235,152,141))
-		);
+		background: #e2766f;
 		text-decoration: none;
 	}
 	
@@ -271,6 +252,8 @@
 		background: rgba(255,255,255,1);
 		border: 1px solid rgba(0,0,0,0.2);
 		display: block;
+		font-family: Cambria, Georgia, serif;
+		font-size: 1em;
 		padding: 0.375em 1%;
 		margin: 0;
 		margin-bottom: 1.250em;
@@ -286,7 +269,17 @@
 	}
 	
 	input[type=submit] {
-		
+		background: #d8544b;
+		border: none;
+		color: rgba(255,255,255,1);
+		cursor: pointer;
+	    display: inline-block;
+	    padding: 0.438em 0.938em;
+	    width: auto;
+	}
+	
+	input[type=submit]:hover {
+		background: #e2766f;
 	}
 	
 	input {
@@ -466,11 +459,8 @@
 	
 	It does make things much neater.
 	------------------------------------------ */
-	p {
-		margin-bottom: 1em;
-	}
-	
 	header {
+		background: #FFFFFF;
 		padding: 1em;
 		text-align: center;
 	}
@@ -495,12 +485,22 @@
 		margin: 0;
 	}
 	
-	/*h1,h2,h3,h4 {
-		border-bottom: 1px dashed rgba(239,142,128,1);
-		margin-bottom: 1.250em;
-		text-transform: uppercase;
-	}*/
-
+	@media only screen and (min-width: 48em){
+		.intro h2 {
+			font-size: 3em;
+		}
+	}
+	
+	.example-section .row {
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		margin: 0.625em 0;
+		padding: 0.625em 0;
+	}
+	
+	.example-section .row:last-child {
+		border-bottom: none;
+	}
+	
 	.round-corner-box {
 		border: 1px solid rgba(239,142,128,1);
 		margin: 5px 0 0.938em;
@@ -511,11 +511,15 @@
 	}
 	
 	p.text-shadow {
-		text-shadow: 0 1px 1px red;
+		text-shadow: 0 1px 1px #d8544b;
+	}
+	
+	.animate {
+		cursor: pointer;
 	}
 	
 	.animate:hover {
-		color: green;
+		color: #d8544b;
 		-moz-transition: color 1s linear 0s;
 			-webkit-transition: color 1s linear 0s;
 				-o-transition: color 1s linear 0s;
@@ -532,10 +536,18 @@
 	}
 	
 	footer {
-		border-top: 1px solid #d8544b;
+		border-top: 1px solid rgba(0,0,0,0.1);
 		clear: both;
 		margin: 0.625em 0;
-		padding: 0.625em 0;
+		padding: 2em 0;
+		text-align: center;
+	}
+	
+	@media only screen and (min-width: 48em){
+		footer p {
+			margin: 0 auto 2em;
+			max-width: 60%;
+		}
 	}
 
 	/* - MOBILE 

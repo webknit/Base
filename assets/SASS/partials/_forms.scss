@@ -27,6 +27,8 @@
 		background: rgba(255,255,255,1);
 		border: 1px solid rgba(0,0,0,0.2);
 		display: block;
+		font-family: $base-font-family;
+		font-size: $base-font-size;
 		margin: 0;
 		margin-bottom: 1.250em;
 		outline: none;
@@ -48,7 +50,16 @@
 	}
 	
 	input[type=submit] {
-		
+		background: #d8544b;
+		border: none;
+		color: rgba(255,255,255,1);
+		cursor: pointer;
+	    display: inline-block;
+	    padding: 0.438em 0.938em;
+	    width: auto;
+	    &:hover {
+	    	background: #e2766f;
+	    }
 	}
 	
 	textarea,

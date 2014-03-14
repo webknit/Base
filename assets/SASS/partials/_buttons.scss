@@ -18,7 +18,7 @@
 *********************************************/
 
 	a.button {
-	    border:1px solid #535050;
+		background: $link;
 	    color: #FFFFFF;
 	    display: inline-block;
 	    float: left;
@@ -27,11 +27,10 @@
 	    padding: 0.438em 0.938em;
 	    width: auto;
 	    @include border-radius (0.188em);
-	    @include button-gradient;
 	    &:hover {
+	    	background: $link-hover;
 			color: #ffffff;
 			text-decoration: none;
-			@include button-gradient-hover;
 		}
 		&:active {
 			opacity:0.9;
