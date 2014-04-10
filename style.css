@@ -56,6 +56,12 @@
 	/* - 3.1. - STRUCTURAL, CONTAINERS, SECTIONS
 	------------------------------------------ */
 	
+	*, *:before, *:after {
+	  -moz-box-sizing: border-box; 
+	  	-webkit-box-sizing: border-box; 
+	  		box-sizing: border-box;
+	}
+	
 	html { 
 		font-size: 100%; 
 		-webkit-text-size-adjust: 100%; 
@@ -290,14 +296,6 @@
 		max-width: 25.000em;
 	}
 	
-	textarea,
-	input,
-	.button {
-		-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-				box-sizing: border-box;
-	}
-	
 	
 	/* - 3.4. - BUILD ELEMENTS 
 	------------------------------------------ */
@@ -323,9 +321,6 @@
 		float: left;
 		overflow: hidden;
 		padding: 1px 0.5%;
-		-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-				box-sizing: border-box;
 	}
 	 
 	.one_four, .two_four, .three_four, .four_four,
@@ -469,9 +464,6 @@
 		background: #d8544b;
 		padding: 5em 0;
 		text-align: center;
-		-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-				box-sizing: border-box;
 	}
 
 	@media only screen and (min-width: 48em){
