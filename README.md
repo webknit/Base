@@ -40,6 +40,7 @@ The vendor directory is for third-party CSS.
 Log
 ---
 
+- V1.3.3 (09/05/2014) - Removing Modernizr & GA code - users should add these if needed
 - V1.3.2 (16/03/2014) - New design. Also new website design at http://base.webknit.co.uk/
 - V1.3.1 (25/02/2014) - Media queries all in one file for both vanilla CSS and SASS uses a new function
 - V1.3.0 (20/02/2014) - Completely reworking SASS, including modules and partials folders
