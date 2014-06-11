@@ -1,4 +1,4 @@
-Base V1.3.2
+Base V1.3.3
 ===========
 
 Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project. 
