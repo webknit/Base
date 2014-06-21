@@ -10,8 +10,8 @@
 
 var Base = Base || {};
 
-Base.functionName = function()
-{	
+Base.functionName = function() {
+	
 	var self = $(this);
 	var variable = $('.var');
 
@@ -33,11 +33,12 @@ Base.functionName = function()
 	}
 
 	init();
+	
 };
 
 // ON DOC READY
-$(function()
-{	
+$(function() {
+	
 	new Base.functionName();
 	
 });
