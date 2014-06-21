@@ -1,4 +1,4 @@
-Base V1.3.3
+Base V1.3.4
 ===========
 
 Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project. 
@@ -40,6 +40,7 @@ The vendor directory is for third-party CSS.
 Log
 ---
 
+- V1.3.4 (21/06/2014) - Updating to jQuery 1.11.1 and adjusting spacing in the JS file
 - V1.3.3 (09/05/2014) - Removing Modernizr & GA code - users should add these if needed
 - V1.3.2 (16/03/2014) - New design. Also new website design at http://base.webknit.co.uk/
 - V1.3.1 (25/02/2014) - Media queries all in one file for both vanilla CSS and SASS uses a new function
