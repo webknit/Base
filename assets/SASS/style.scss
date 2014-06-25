@@ -102,7 +102,7 @@
 	See .example class below to understand how the media queries work
 	------------------------------------------ */
 	
-	header {
+	.header {
 		background: #FFFFFF;
 		padding: 1em;
 		text-align: center;
@@ -124,7 +124,7 @@
 		}
 	}
 	
-	.example-section {
+	.section {
 		.row {
 			border-bottom: 1px solid rgba(0,0,0,0.1);
 			margin: 0.625em 0;
@@ -165,14 +165,7 @@
 		height: 3.125em; 
 	}
 	
-	footer {
-		border-top: 1px solid rgba(0,0,0,0.1);
-		clear: both;
-		margin: 0.625em 0;
-		padding: 0.625em 0;
-	}
-	
-	footer {
+	.footer {
 		border-top: 1px solid rgba(0,0,0,0.1);
 		clear: both;
 		margin: 0.625em 0;
