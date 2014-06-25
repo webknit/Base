@@ -15,21 +15,24 @@ Base.functionName = function() {
 	var self = $(this);
 	var variable = $('.var');
 
-	function init()
-	{
+	function init() {
+
 		variable.click(functionOne);
 		functionTwo();
+
 	}
 
-	function functionOne()
-	{
+	function functionOne() {
+
 		// JS CODE
+
 	}
 
-	function functionTwo()
-	{
+	function functionTwo() {
+
 		// JS CODE
 		window.hide();
+		
 	}
 
 	init();
