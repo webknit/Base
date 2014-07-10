@@ -12,13 +12,11 @@ var Base = Base || {};
 
 Base.functionName = function() {
 	
-	var self = $(this);
-	var variable = $('.var');
+	var variable = $('.variable');
 
 	function init() {
 
 		variable.click(functionOne);
-		functionTwo();
 
 	}
 
@@ -26,13 +24,6 @@ Base.functionName = function() {
 
 		// JS CODE
 
-	}
-
-	function functionTwo() {
-
-		// JS CODE
-		window.hide();
-		
 	}
 
 	init();

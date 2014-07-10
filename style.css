@@ -313,7 +313,6 @@
 	- 4.0 -  GRID STYLES
 *********************************************/
 	
-
   	.one_four, .two_four, .three_four, .four_four,
 	.one_three, .two_three, .three_three,
 	.one_two, .two_two,
@@ -332,6 +331,7 @@
 		margin-left: 0%;
 		width: 100%; 
 	}
+
 
 	/* - 4.1. - WIDE MOBILE 
 	------------------------------------------ */
@@ -454,6 +454,7 @@
 	
 	It does make things much neater.
 	------------------------------------------ */
+
 	.header {
 		background: #FFFFFF;
 		padding: 1em;
@@ -538,6 +539,7 @@
 			max-width: 60%;
 		}
 	}
+	
 
 	/* - MOBILE 
 	------------------------------------------ */

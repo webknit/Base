@@ -1,7 +1,8 @@
-Base V1.3.4
-===========
+♥ Base V1.3.4 ♥ 
+===============
 
-Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project. 
+Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project.
+
 
 Features
 --------
@@ -12,6 +13,7 @@ Base is extremely lightweight and is ready to go straight out of the box. Downlo
 
 View the website at www.base.webknit.co.uk
 
+
 SASS Modules
 -------------
 
@@ -20,6 +22,7 @@ The modules directory is reserved for Sass code that doesn't cause Sass to actua
 - _variables.scss - Colours, Gradients, Typography.
 - _functions.scss - All the functions go in here
 - _mixins.scss - All the mixins go in here
+
 
 SASS Partials
 -------------
@@ -32,10 +35,12 @@ The partials directory is where most of the CSS is constructed. Plan ahead and t
 - _forms.scss - Form styles
 - _font-face.scss - Font face stuff
 
+
 Vendor
 -------------
 
 The vendor directory is for third-party CSS.
+
 
 Log
 ---
@@ -55,8 +60,4 @@ Log
 - V1.1.0 (17/12/2012) - Introducing LESS. CSS Reset refined
 - V1.0.1 (26/11/2012) - Adding additional spacing to CSS file
 - V1.0.0 (03/11/2012) - Initial Base template release
-
-
-
-
 
