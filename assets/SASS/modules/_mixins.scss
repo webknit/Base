@@ -40,14 +40,14 @@
 	  			border-radius: $radius;
 	}
 	
-	@mixin transition ($which, $speed, $method, $delay) {
+	@mixin transition ($which,$speed,$method,$delay) {
 		-webkit-transition:$which $speed $method $delay;
 			-moz-transition: $which $speed $method $delay;
 				-o-transition: $which $speed $method $delay;
 						transition: $which $speed $method $delay;
 	}
 	
-	@mixin animation ($which, $speed, $method, $delay) {
+	@mixin animation ($which,$speed,$method,$delay) {
 		-webkit-animation:$which $speed $method $delay;
 			-moz-animation: $which $speed $method $delay;
 				-o-animation: $which $speed $method $delay;
