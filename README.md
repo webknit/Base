@@ -14,6 +14,25 @@ Base is extremely lightweight and is ready to go straight out of the box. Downlo
 View the website at www.base.webknit.co.uk
 
 
+Grunt
+--------
+
+Grunt is a task runner that can dramatically improve your front-end development workflow. With the use of a number of grunt plugins you can automate tasks such as compiling SASS and CoffeeScript, optimizing images and validating your JavaScript code with JSHint.
+
+If you're not using SASS then the gruntfile isn't suitable for you without being modified. If you just want to use SASS with something like Codekit then that's also fine. Just delete the package.json & Gruntfile.js.
+
+I'm hoping that if you plan to use the grunt you have some knowledge of how it works and are familiar with the command line. 
+If you encounter errors I assume you would know how to fix them
+ 
+If you are using grunt then here's the instructions
+- navigate to your project using the command link
+- type 'npm install'
+- type 'grunt' to make the project watch your code and update the SASS and JS when saved
+- type 'grunt build' to compressed the compiled SASS/CSS, JS and to minify the images.
+
+The tasks in the Base Gruntfile are very simple to get you started quickly. There are tons of useful stuff you can do with Grunt. I'm planning on writing a blog post in the near future.
+
+
 SASS Modules
 -------------
 
