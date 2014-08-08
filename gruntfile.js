@@ -5,23 +5,19 @@ module.exports = function(grunt) {
 
         concat: {
             dist: {
-		      src: ['assets/js/libs/*.js','assets/js/plugins.js', 'assets/js/script.js'],
+		      src: ['assets/js/plugins.js', 'assets/js/script.js'],
 		      dest: 'assets/js/deployment.js'
 		    },
 		    options: {
 	        	style: 'compressed'
 		    },
         },
-        
-        uglify: {
-		    build: {
-		        src: 'assets/js/deployment.js',
-		        dest: 'assets/js/deployment.min.js'
-		    }
-		},
 		
 		imagemin: {
 		    dynamic: {
+		    	options: {
+			        optimizationLevel: 7
+			    },
 		        files: [{
 		            expand: true,
 		            cwd: 'assets/img/',
@@ -41,13 +37,6 @@ module.exports = function(grunt) {
 		        }
 		    } 
 		},
-		
-        cssmin: {
-			style: {
-                src: 'style.css',
-                dest: 'style.min.css'
-            }     
-        },
 		
 		watch: {
 			options: {
@@ -73,13 +62,11 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('build', ['concat', 'uglify', 'imagemin', 'sass', 'cssmin']);
+    grunt.registerTask('deploy', ['concat', 'imagemin', 'sass']);
 
 };
