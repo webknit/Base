@@ -1,10 +1,13 @@
 /* - BASE HTML TEMPLATE
 ------------------------------------------------- 
-	Description: Main/Base CSS styles
+	Description: Base/Main CSS styles
 	Author: Shane Prendergast
 	Author URL: http://www.webknit.co.uk
 	Template URL: http://base.webknit.co.uk/
-	Notes: Base Css styles and Mobile first approach. Consider mimifying your CSS for performance when compiling your SASS.
+	Notes: 
+		Base Css styles and Mobile first approach. 
+		If you're using Grunt then this will be compiled to style.css
+		If you're not using Grunt then try something like Codekit to compile this.
 /*
 
 
