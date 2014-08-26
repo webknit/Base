@@ -19,13 +19,12 @@ Grunt
 
 Grunt is a task runner that can dramatically improve your front-end development workflow. With the use of a number of grunt plugins you can automate tasks such as compiling SASS and CoffeeScript, optimizing images and validating your JavaScript code with JSHint.
 
-If you're not using SASS then the gruntfile isn't suitable for you without being modified. Just delete the package.json, Gruntfile.js and the SASS folder and code Vanilla CSS.
+If you're not using SASS then the gruntfile isn't suitable for you without being modified. Just delete the package.json, Gruntfile.js and SASS folder then write Vanilla CSS.
 If you just want to use SASS with something like Codekit then that's also fine. Just delete the package.json & Gruntfile.js. 
 
-I'm hoping that if you plan to use the grunt you have some knowledge of how it works and are familiar with the command line. 
-If you encounter errors I assume you would know how to fix them.
+I'm hoping that if you plan to use the grunt you have some knowledge of how it works and are familiar with the command line and everything that needs to be installed in order to use grunt etc.
  
-If you are using grunt then here's the instructions
+If you are using grunt then here are some basic instructions to get started (You will need node, npm, grunt etc installed)
 - navigate to your project using the command link
 - type 'npm install'
 - type 'grunt' to make the project watch your code and update the SASS and JS when saved
