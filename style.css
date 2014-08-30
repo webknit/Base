@@ -333,6 +333,19 @@
 		margin-left: 0%;
 		width: 100%; 
 	}
+	
+	.one_twelve, .two_twelve, .three_twelve, .four_twelve, 
+	.five_twelve, .six_twelve, .seven_twelve, .eight_twelve, 
+	.nine_twelve, .ten_twelve, .eleven_twelve, .twelve_twelve {
+		background:#ef8e80;
+		color:#ffffff;
+		height:3.125em;
+		margin-bottom:0.625em;
+		width:100%;
+		float:left;
+		margin-left:0;
+		margin-right:0;
+	}
 
 
 	/* - 4.1. - WIDE MOBILE 
@@ -387,6 +400,84 @@
 
 		.one_third {
 			width: 31%; 
+		}
+		
+		.one_twelve {
+			width:6.77966%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.two_twelve {
+			width:15.25424%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.three_twelve {
+			width:23.72881%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.four_twelve {
+			width:32.20339%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.five_twelve {
+			width:40.67797%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.six_twelve {
+			width:49.15254%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.seven_twelve {
+			width:57.62712%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.eight_twelve {
+			width:66.10169%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.nine_twelve {
+			width:74.57627%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.ten_twelve {
+			width:83.05085%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.eleven_twelve {
+			width:91.52542%;
+			float:left;
+			margin-right:1.69492%;
+		}
+		
+		.twelve_twelve {
+			width:100%;
+			float:left;
+			margin-left:0;
+			margin-right:0;
+		}
+		
+		.end-grid {
+			float:right;
+			margin-right:0;
 		}
 	}
 
