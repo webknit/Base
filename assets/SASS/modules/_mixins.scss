@@ -20,7 +20,7 @@
 *********************************************/
 
 	@mixin breakpoint($point) {
-		@else if $point == medium {
+		@if $point == medium {
 			@media only screen and (min-width: 48em) { @content; }
 		}
 		@else if $point == large {
