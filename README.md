@@ -1,4 +1,4 @@
-♥ Base V1.4.1 ♥ 
+♥ Base V1.4.2 ♥ 
 ===============
 
 Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project.
@@ -30,8 +30,19 @@ If you are using grunt then here are some basic instructions to get started (You
 - type 'grunt' to make the project watch your code and update the SASS and JS when saved
 - type 'grunt deploy' to compressed the compiled SASS/CSS, JS and to minify the images.
 
+Base uses Susy for it's grid layout.
+- You will need to install the Susy Gem - Type 'gem install susy' in the command line.
+- Have a read through the code in _grid.scss it should be self explanatory. Base includes code examples too.
+- If you're not using Susy but want a sass Grid then maybe use the CSS grid code and paste them into the SASS?
+
 The tasks in the Base Gruntfile are very simple to get you started quickly. 
 There are tons of useful stuff you can do with Grunt. I'm planning on writing a blog post in the near future.
+
+REMEMBER you don't have to use Grunt or Susy. 
+Delete the package.json & Gruntfile.js to dispose of Grunt.
+Delete the '@import "susy";' from _grid.scss and sort out the rest of the code in that file that uses Susy.
+I've included these things into my workflow as they have proven to be the best way of working. 
+If there's something you don't understand or want to ask a question then tweet me @webknit or email contact@webknit.co.uk
 
 
 SASS Modules
@@ -65,6 +76,7 @@ The vendor directory is for third-party CSS.
 Log
 ---
 
+- V1.4.2 (12/08/2014) - Including Susy SASS & new CSS grids based on Susy output
 - V1.4.1 (12/08/2014) - Including Susy
 - V1.4.0 (09/08/2014) - Including Grunt
 - V1.3.4 (21/06/2014) - Updating to jQuery 1.11.1 and adjusting spacing in the JS file
