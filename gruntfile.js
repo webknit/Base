@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 		        },
 		    },
 		    sass: {
-			    files: ['assets/SASS/*.scss'],
+			    files: ['assets/SASS/*.scss', 'assets/SASS/partials/*.scss', 'assets/SASS/modules/*.scss'],
 			    tasks: ['sass'],
 			    options: {
 			        spawn: false,
