@@ -23,7 +23,7 @@
     	- Base ............................. 3.1.
     	- Buttons ...........................3.2.
     	- Forms ............................ 3.3
-    - Mobile grid styles ................... 4.0.
+    - Grids ................................ 4.0.
     - Example section ...................... 5.0.
     - @font-face ........................... 0.0.
 */
@@ -84,7 +84,7 @@
 
 
 /*********************************************
-	- 4.0 -  GRID STYLES
+	- 4.0 -  GRIDS
 *********************************************/
 
 	@import "partials/_grid";
@@ -115,13 +115,13 @@
 		background: #d8544b;
 		padding: 5em 0;
 		text-align: center;
-		@include breakpoint(tablet) {
+		@include breakpoint(medium) {
 			padding: 10em 0;
 		}
 		h2 {
 			color: #ffffff;
 			margin: 0;
-			@include breakpoint(tablet) {
+			@include breakpoint(medium) {
 				font-size: 4.5em;
 			}	
 		}
@@ -159,13 +159,12 @@
 		}
 	}
 
-	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
-	.grid .one_three, .grid .two_three, .grid .three_three,
-	.grid .one_two, .grid .two_two,
-	.grid .two_third, .grid .one_third {
-		background: #d8544b;
-		color: #ffffff;
-		height: 3.125em; 
+	.grid .one_twelve, .grid .two_twelve, .grid .three_twelve, .grid .four_twelve, 
+	.grid .five_twelve, .grid .six_twelve, .grid .seven_twelve, .grid .eight_twelve, 
+	.grid .nine_twelve, .grid .ten_twelve, .grid .eleven_twelve, .grid .twelve_twelve {
+		background: #ef8e80;
+	    color: #ffffff;
+	    height: 3.125em;
 	}
 	
 	.footer {
@@ -175,7 +174,7 @@
 		padding: 2em 0;
 		text-align: center;
 		p {
-			@include breakpoint(tablet) {
+			@include breakpoint(medium) {
 				margin: 0 auto 2em;
 				max-width: 60%;
 			}
@@ -184,13 +183,10 @@
 
 	.example {
 		color: red;
-		@include breakpoint(wide-mobile) {
-			color: blue;
-		}
-		@include breakpoint(tablet) {
+		@include breakpoint(medium) {
 			color: yellow;
 		}
-		@include breakpoint(desktop) {
+		@include breakpoint(large) {
 			color: green;
 		}
 		@include breakpoint(retina) {

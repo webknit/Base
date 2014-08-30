@@ -21,10 +21,10 @@
     	- Buttons .......................... 3.4.
     	- Form ............................. 3.5.
     	- Build elements ................... 3.6.
-    - Mobile grid styles ................... 4.0.
-    	- Wide Mobile ...................... 4.1.
-    	- Tablet ........................... 4.2.
-    	- Desktop .......................... 4.3.
+    - Grids ................................ 4.0.
+    	- Small ............................ 4.1.
+    	- Medium ........................... 4.2.
+    	- Large ............................ 4.3.
     - Example Section ...................... 5.0.
     - @fontface ............................ 0.0.	
 */
@@ -312,96 +312,28 @@
 	
 	
 /*********************************************
-	- 4.0 -  GRID STYLES
+	- 4.0 -  GRIDS
 *********************************************/
+
+	/* - 4.1. - SMALL SCREEN 
+	------------------------------------------ */
 	
-  	.one_four, .two_four, .three_four, .four_four,
-	.one_three, .two_three, .three_three,
-	.one_two, .two_two,
-	.two_third, .one_third {
-		float: left;
-		overflow: hidden;
-		padding: 1px 0.5%;
-	}
-	 
-	.one_four, .two_four, .three_four, .four_four,
-	.one_three, .two_three, .three_three,
-	.one_two, .two_two,
-	.two_third, .one_third {
-		float: left;
-		margin-bottom: 0.625em;
-		margin-left: 0%;
-		width: 100%; 
-	}
-	
-	.one_twelve, .two_twelve, .three_twelve, .four_twelve, 
+  	.one_twelve, .two_twelve, .three_twelve, .four_twelve, 
 	.five_twelve, .six_twelve, .seven_twelve, .eight_twelve, 
 	.nine_twelve, .ten_twelve, .eleven_twelve, .twelve_twelve {
-		background:#ef8e80;
-		color:#ffffff;
-		height:3.125em;
-		margin-bottom:0.625em;
-		width:100%;
-		float:left;
-		margin-left:0;
-		margin-right:0;
+	    float: left;
+	    margin-bottom: 0.625em;
+	    margin-left: 0;
+	    margin-right: 0;
+	    padding: 1px 0.5%;
+	    width: 100%;
 	}
 
 
-	/* - 4.1. - WIDE MOBILE 
-	------------------------------------------ */
-
-	@media only screen and (min-width: 30em) {
-
-	}
-
-
-	/* - 4.2. - TABLET 
+	/* - 4.2. - MEDIUM BREAKPOINT 
 	------------------------------------------ */
 
 	@media only screen and (min-width: 48em) {
-		.one_four, .two_four, .three_four, .four_four,
-		.one_three, .two_three, .three_three,
-		.one_two, .two_two,
-		.two_third, .one_third {
-			float: left;
-			margin-bottom: 0.625em;
-			margin-left: 4%; 
-		}
-
-		.one_four, .two_four, .three_four, .four_four {
-			width: 22%; 
-		}
-
-		.one_four {
-			margin-left: 0%; 
-		}
-
-		.one_three, .two_three, .three_three {
-			width: 30.66667%; 
-		}
-
-		.one_three {
-			margin-left: 0; 
-		}
-
-		.one_two, .two_two {
-			width: 48%; 
-		}
-
-		.one_two {
-			margin-left: 0; 
-		}
-
-		.two_third {
-			margin-left: 0;
-			width: 65%; 
-		}
-
-		.one_third {
-			width: 31%; 
-		}
-		
 		.one_twelve {
 			width:6.77966%;
 			float:left;
@@ -482,50 +414,13 @@
 	}
 
 
-	/* - 4.3. - DESKTOP 
+	/* - 4.3. - LARGE BREAKPOINT 
 	------------------------------------------ */
 
 	@media only screen and (min-width: 73.125em) {
-		.one_four, .two_four, .three_four, .four_four,
-		.one_three, .two_three, .three_three,
-		.one_two, .two_two,
-		.two_third, .one_third {
-		    margin-bottom: 0.625em;
-		    margin-left: 1.875em;
-		}
 		
-		.one_four, .two_four, .three_four, .four_four {
-		  	width: 16.875em; 
-		}
+		/* CSS */
 		
-		.one_four {
-		  	margin-left: 0; 
-		}
-		
-		.one_three, .two_three, .three_three {
-		  	width: 23.125em; 
-		}
-		
-		.one_three {
-		  	margin-left: 0; 
-		}
-		
-		.one_two, .two_two {
-		  	width: 35.625em; 
-		}
-		
-		.one_two {
-		  	margin-left: 0; 
-		}
-		
-		.two_third {
-		  	margin-left: 0;
-		  	width: 48.125em; 
-		}
-		
-		.one_third {
-		  	width: 23.125em;
-		}
 	}
 
 	
@@ -608,14 +503,13 @@
 				-o-transition: color 1s linear 0s;
 					transition: color 1s linear 0s;
 	}
-
-	.grid .one_four, .grid .two_four, .grid .three_four, .grid .four_four,
-	.grid .one_three, .grid .two_three, .grid .three_three,
-	.grid .one_two, .grid .two_two,
-	.grid .two_third, .grid .one_third {
-		background: #d8544b;
-		color: #ffffff;
-		height: 3.125em; 
+	
+	.grid .one_twelve, .grid .two_twelve, .grid .three_twelve, .grid .four_twelve, 
+	.grid .five_twelve, .grid .six_twelve, .grid .seven_twelve, .grid .eight_twelve, 
+	.grid .nine_twelve, .grid .ten_twelve, .grid .eleven_twelve, .grid .twelve_twelve {
+		background: #ef8e80;
+	    color: #ffffff;
+	    height: 3.125em;
 	}
 	
 	.footer {
