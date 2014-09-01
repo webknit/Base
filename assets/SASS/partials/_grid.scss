@@ -44,9 +44,6 @@
 	.one_twelve, .two_twelve, .three_twelve, .four_twelve,
 	.five_twelve, .six_twelve, .seven_twelve, .eight_twelve,
 	.nine_twelve, .ten_twelve, .eleven_twelve, .twelve_twelve {
-		background: rgba(239,142,128,1);
-		color: #ffffff;
-		height: 3.125em;
 		margin-bottom: 0.625em;
 		padding: 1px 0.5%;
 		@include span(12 of 12)
