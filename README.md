@@ -9,7 +9,13 @@ Features
 
 Base is a CSS/SASS/HTML5 based mobile first front end template which is impeccably neat and tidy and is an ideal starting point for a web project of any size.
 
+Base is for developers who want a platform to start their web projects. Base offers the fundamental parts of a web project that a developer can then build upon.
+
 Base is extremely lightweight and is ready to go straight out of the box. Download the files. Choose either CSS/SASS for your stylesheet language and then get coding. The files are impeccably neat and generously commented and they include markup and style examples.
+
+Base uses a mobile first/progressive enhancement approach. It offers some basic features such as media queries, but it’s also very modular so if you don’t want something then take it out. Chances are you will use everything that’s in there though.
+
+Base is not an extensive template that offers a ton of code that means a developer doesn’t have to do much coding. Only an amateurish developer would use those. ;-) 
 
 View the website at www.base.webknit.co.uk
 
@@ -67,12 +73,6 @@ The partials directory is where most of the CSS is constructed. Plan ahead and t
 - _font-face.scss - Font face stuff
 
 
-Vendor
--------------
-
-The vendor directory is for third-party CSS.
-
-
 Log
 ---
 
@@ -94,4 +94,12 @@ Log
 - V1.1.0 (17/12/2012) - Introducing LESS. CSS Reset refined
 - V1.0.1 (26/11/2012) - Adding additional spacing to CSS file
 - V1.0.0 (03/11/2012) - Initial Base template release
+
+
+Who's behind this?
+-------------
+
+Base is proudly made by Webknit and is the result of many hours working on projects of all sizes. It is driven by a massive enthusiasm for all things web.
+
+Base is constantly updated and modified to ensure it stays on top of the game. If you’ve any suggestions or ideas then don’t hesitate to get in touch. 
 
