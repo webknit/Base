@@ -7,7 +7,8 @@
 	Notes:	
 		My examples are just basic grids.
 		For larger projects I use something like Susy.
-		To install Susy (you will need ruby installed) - gem install susy
+		To install Susy (you will need ruby installed) 
+		Either 'bundle install' will run the gemfile or 'gem install susy' to do individually
 		Import it into your SASS - @import "susy";
 		If you're not using susy then remove it from 1.0!
 		Documentation: 
