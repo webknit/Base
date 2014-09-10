@@ -25,30 +25,10 @@ Grunt
 
 Grunt is a task runner that can dramatically improve your front-end development workflow. With the use of a number of grunt plugins you can automate tasks such as compiling SASS and CoffeeScript, optimizing images and validating your JavaScript code with JSHint.
 
-If you're not using SASS then the gruntfile isn't suitable for you without being modified. Just delete the package.json, Gruntfile.js and SASS folder then write Vanilla CSS.
-If you just want to use SASS with something like Codekit then that's also fine. Just delete the package.json & Gruntfile.js. 
+To find out more regardless of whether you are using Grunt or not then have a read of the following post.
+http://shaneprendergast.co.uk/css/a-guide-to-base/
 
-I'm hoping that if you plan to use the grunt you have some knowledge of how it works and are familiar with the command line and everything that needs to be installed in order to use grunt etc.
- 
-If you are using grunt then here are some basic instructions to get started (You will need node, npm, grunt etc installed)
-- navigate to your project using the command link
-- type 'npm install'
-- type 'grunt' to make the project watch your code and update the SASS and JS when saved
-- type 'grunt deploy' to compressed the compiled SASS/CSS, JS and to minify the images.
-
-Base uses Susy for it's grid layout.
-- You will need to install the Susy Gem - Type 'gem install susy' in the command line.
-- Have a read through the code in _grid.scss it should be self explanatory. Base includes code examples too.
-- If you're not using Susy but want a sass Grid then maybe use the CSS grid code and paste them into the SASS?
-
-The tasks in the Base Gruntfile are very simple to get you started quickly. 
-There are tons of useful stuff you can do with Grunt. I'm planning on writing a blog post in the near future.
-
-REMEMBER you don't have to use Grunt or Susy. 
-Delete the package.json & Gruntfile.js to dispose of Grunt.
-Delete the '@import "susy";' from _grid.scss and sort out the rest of the code in that file that uses Susy.
-I've included these things into my workflow as they have proven to be the best way of working. 
-If there's something you don't understand or want to ask a question then tweet me @webknit or email contact@webknit.co.uk
+REMEMBER you don't have to use Grunt or SASS, read the post above for more info.
 
 
 SASS Modules
