@@ -26,18 +26,16 @@ module.exports = function(grunt) {
 		        }]
 		    }
 		},
-		
-		sass: {
-		    dist: {
-		        options: {
-		            style: 'compressed',
-      				require: 'susy'
-		        },
-		        files: {
-		            'style.css': 'assets/SASS/style.scss'
-		        }
-		    } 
-		},
+
+		compass: {
+			dist: {
+	        	options: {
+	        		sassDir: 'assets/SASS',
+	        		cssDir: '',
+	        		environment: 'production',
+	        	},
+	        },
+	    },
 		
 		watch: {
 			options: {
@@ -53,7 +51,7 @@ module.exports = function(grunt) {
 		    },
 		    sass: {
 			    files: ['assets/SASS/*.scss', 'assets/SASS/partials/*.scss', 'assets/SASS/modules/*.scss'],
-			    tasks: ['sass'],
+			    tasks: ['compass'],
 			    options: {
 			        spawn: false,
 			    }
@@ -66,8 +64,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-compass');
 
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('deploy', ['concat', 'imagemin', 'sass']);
+    grunt.registerTask('deploy', ['concat', 'imagemin', 'compass']);
 
 };
