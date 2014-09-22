@@ -33,7 +33,8 @@
 *********************************************/
 
 	.example-gradient {
-		
+		/* Using Mixin here for a gradient. It's located in the _mixins.scss file */
+		@include button-gradient;
 	}
 
 
