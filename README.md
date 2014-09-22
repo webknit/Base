@@ -1,4 +1,4 @@
-♥ Base V1.4.2 ♥ 
+♥ Base V1.4.3 ♥ 
 ===============
 
 Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project.
@@ -36,9 +36,10 @@ SASS Modules
 
 The modules directory is reserved for Sass code that doesn't cause Sass to actually output CSS. Things like mixin declarations, functions, and variables.
 
-- _variables.scss - Colours, Gradients, Typography.
+- _variables.scss - Colours, Gradients, Typography
 - _functions.scss - All the functions go in here
 - _mixins.scss - All the mixins go in here
+- _vendor.scss - The vendor directory is for third-party CSS
 
 
 SASS Partials
@@ -56,6 +57,7 @@ The partials directory is where most of the CSS is constructed. Plan ahead and t
 Log
 ---
 
+- V1.4.3 (22/09/2014) - Importing Compass to the SASS files
 - V1.4.2 (12/08/2014) - Including Susy SASS & new CSS grids based on Susy output
 - V1.4.1 (12/08/2014) - Including Susy
 - V1.4.0 (09/08/2014) - Including Grunt
