@@ -54,6 +54,17 @@ The partials directory is where most of the CSS is constructed. Plan ahead and t
 - _font-face.scss - Font face stuff
 
 
+Structuring your projects*
+-------------
+
+This is a developer preference. There is no offical way.
+Do you want all your pages in partials?
+Would you rather just add main components and still use style.scss for the bulk of the CSS?
+Do what's best for you and your project.
+
+*Blog post coming on this at some point.
+
+
 Log
 ---
 
