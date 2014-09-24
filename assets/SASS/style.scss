@@ -34,6 +34,8 @@
 
 /*********************************************
 	- 1.0 -  SASS MODULES
+	The modules directory is reserved for Sass code that doesn't cause Sass to actually output CSS. 
+	Things like mixin declarations, functions, and variables.
 *********************************************/
 
 	/* - 1.1. - COMPASS
@@ -78,6 +80,8 @@
 
 /*********************************************
 	- 3.0 -  SASS PARTIALS
+	The partials directory is where most of the CSS is constructed. 
+	Plan ahead and think how to structure these.
 *********************************************/
 	
 	/* - 3.1. - BASE ELEMENTS, STRUCTURE, TYPOGRAPHY, LINKS

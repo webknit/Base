@@ -45,7 +45,7 @@ The modules directory is reserved for Sass code that doesn't cause Sass to actua
 SASS Partials
 -------------
 
-The partials directory is where most of the CSS is constructed. Plan ahead and think how to structure your partials.
+The partials directory is where most of the CSS is constructed. Plan ahead and think how to structure these.
 
 - _reset.scss - Reset, including HTML5
 - _base.scss - All the base elements, HTML, body, container, headers, links, img, blockquote etc
