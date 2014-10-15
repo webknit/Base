@@ -12,6 +12,10 @@ module.exports = function(grunt) {
 	        	style: 'compressed'
 		    },
         },
+        
+        jshint: {
+		  files: ['assets/js/*.js'],
+		},
 		
 		imagemin: {
 		    dynamic: {
@@ -43,7 +47,7 @@ module.exports = function(grunt) {
 		    },
 		    scripts: {
 		        files: ['assets/js/*.js'],
-		        tasks: ['concat'],
+		        tasks: ['concat', 'jshint'],
 		        options: {
 		        	style: 'compressed',
 		            spawn: false,
@@ -65,6 +69,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('deploy', ['concat', 'imagemin', 'compass']);
