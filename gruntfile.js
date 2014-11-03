@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 			dist: {
 	        	options: {
 	        		sassDir: 'assets/SASS',
-	        		cssDir: '',
+	        		cssDir: '.',
 	        		environment: 'production',
 	        	},
 	        },
