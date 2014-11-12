@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 		        livereload: true,
 		    },
 		    scripts: {
-		        files: ['assets/js/*.js'],
+		    	files: 'assets/JS/{,*/}*.js',
 		        tasks: ['concat', 'jshint'],
 		        options: {
 		        	style: 'compressed',
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 		        },
 		    },
 		    sass: {
-			    files: ['assets/SASS/*.scss', 'assets/SASS/partials/*.scss', 'assets/SASS/modules/*.scss'],
+			    files: ['assets/SASS/{,*/}*.{scss,sass}'],
 			    tasks: ['compass'],
 			    options: {
 			        spawn: false,
