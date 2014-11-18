@@ -13,11 +13,15 @@
 /* - CONTENTS
 -------------------------------------------------
 	- Mixins  .............................. 1.0.
+	- Border radius  ....................... 2.0.
+	- Transition  .......................... 3.0.
+	- Animation  ........................... 4.0.
+	- SVG BG-img Fallback  ................. 5.0.
 */
 
 
 /*********************************************
-	- 1.0 -  MIXINS
+	- 1.0 -  BREAKPOINT
 *********************************************/
 
 	@mixin breakpoint($point) {
@@ -31,12 +35,22 @@
 			@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { @content; }
 		}
 	}
+	
+	
+/*********************************************
+	- 2.0 -  BORDER RADIUS
+*********************************************/
 
 	@mixin border-radius($radius) {
 	  	-moz-border-radius: $radius;
 	  		-webkit-border-radius: $radius;
 	  			border-radius: $radius;
 	}
+	
+	
+/*********************************************
+	- 3.0 -  TRANSITION
+*********************************************/
 	
 	@mixin transition ($which,$speed,$method,$delay) {
 		-webkit-transition:$which $speed $method $delay;
@@ -45,9 +59,28 @@
 						transition: $which $speed $method $delay;
 	}
 	
+	
+/*********************************************
+	- 4.0 -  ANIMATION
+*********************************************/	
+	
 	@mixin animation ($which,$speed,$method,$delay) {
 		-webkit-animation:$which $speed $method $delay;
 			-moz-animation: $which $speed $method $delay;
 				-o-animation: $which $speed $method $delay;
 						animation: $which $speed $method $delay;
+	}
+	
+	
+/*********************************************
+	- 5.0 -  SVG BG-IMG FALLBACK
+*********************************************/
+	
+	// Sass mixin for SVG with fallback support using the invisible gradient technique
+	// http://pauginer.com/post/36614680636/invisible-gradient-technique
+	@mixin vector-image($img, $fallback, $position: center center, $size: auto) {
+		background: transparent url($fallback) $position no-repeat;
+		background-image: -webkit-linear-gradient(transparent, transparent), url($img);
+		background-image: linear-gradient(transparent, transparent), url($img);
+		background-size: $size;
 	}
