@@ -37,6 +37,7 @@ module.exports = function(grunt) {
 	        		sassDir: 'assets/SASS',
 	        		cssDir: '.',
 	        		environment: 'production',
+	        		outputStyle: 'compressed'
 	        	},
 	        },
 	    },
@@ -47,7 +48,7 @@ module.exports = function(grunt) {
 		    },
 		    scripts: {
 		    	files: 'assets/JS/{,*/}*.js',
-		        tasks: ['concat', 'jshint'],
+		        tasks: ['jshint', 'concat'],
 		        options: {
 		        	style: 'compressed',
 		            spawn: false,
