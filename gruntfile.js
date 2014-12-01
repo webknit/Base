@@ -6,12 +6,20 @@ module.exports = function(grunt) {
         concat: {
             dist: {
 		      src: ['assets/js/plugins.js', 'assets/js/script.js'],
-		      dest: 'assets/js/deployment.js'
+		      dest: 'assets/js/script.min.js'
 		    },
 		    options: {
 	        	style: 'compressed'
 		    },
         },
+
+        uglify: {
+			my_target: {
+				files: {
+					'assets/js/script.min.js': 'assets/js/script.min.js'
+				}
+			}
+		},
         
         jshint: {
 		  files: ['assets/js/*.js'],
@@ -48,7 +56,7 @@ module.exports = function(grunt) {
 		    },
 		    scripts: {
 		    	files: 'assets/JS/{,*/}*.js',
-		        tasks: ['jshint', 'concat'],
+		        tasks: ['jshint', 'concat', 'uglify'],
 		        options: {
 		        	style: 'compressed',
 		            spawn: false,
@@ -66,6 +74,7 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
