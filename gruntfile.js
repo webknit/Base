@@ -7,10 +7,7 @@ module.exports = function(grunt) {
             dist: {
 		      src: ['assets/js/plugins.js', 'assets/js/script.js'],
 		      dest: 'assets/js/script.min.js'
-		    },
-		    options: {
-	        	style: 'compressed'
-		    },
+		    }
         },
 
         uglify: {
