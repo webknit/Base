@@ -22,10 +22,17 @@
 	- 1.0 -  COLOURS
 *********************************************/
 
-	$standard: #333333;
-	$header: #141414;
-	$link: #d8544b;
-	$link-hover: #e2766f;
+	/* Find colour names - http://chir.ag/projects/name-that-color/ */
+	
+	$col-mine-shaft: #333333;
+	$col-cod-gray: #141414;
+	$col-red-damask: #d8544b;
+	$col-sunglo: #e2766f;
+
+	$standard: $col-mine-shaft;
+	$header: $col-cod-gray;
+	$link: $col-red-damask;
+	$link-hover: $col-sunglo;
 
 	
 /*********************************************
