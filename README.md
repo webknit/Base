@@ -1,4 +1,4 @@
-♥ Base V1.4.3 ♥ 
+♥ Base V1.4.4 ♥ 
 ===============
 
 Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project.
@@ -54,7 +54,7 @@ The partials directory is where most of the CSS is constructed. Plan ahead and t
 - _font-face.scss - Font face stuff
 
 
-Structuring your projects*
+Structuring your projects
 -------------
 
 This is a developer preference. There is no offical way.
@@ -62,12 +62,11 @@ Do you want all your pages in partials?
 Would you rather just add main components and still use style.scss for the bulk of the CSS?
 Do what's best for you and your project.
 
-*Blog post coming on this at some point.
-
 
 Log
 ---
 
+- V1.4.4 (07/12/2014) - Introducing new way of writing colour variables in SASS
 - V1.4.3 (22/09/2014) - Importing Compass to the SASS files
 - V1.4.2 (12/08/2014) - Including Susy SASS & new CSS grids based on Susy output
 - V1.4.1 (12/08/2014) - Including Susy

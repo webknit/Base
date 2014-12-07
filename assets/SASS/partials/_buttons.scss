@@ -18,7 +18,7 @@
 *********************************************/
 
 	a.button {
-		background: $link;
+		background: $col-link;
 	    color: #FFFFFF;
 	    display: inline-block;
 	    float: left;
@@ -28,7 +28,7 @@
 	    width: auto;
 	    @include border-radius (0.188em);
 	    &:hover {
-	    	background: $link-hover;
+	    	background: $col-link-hover;
 			color: #ffffff;
 			text-decoration: none;
 		}

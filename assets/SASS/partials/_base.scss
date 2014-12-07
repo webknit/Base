@@ -35,7 +35,7 @@
 	}
 	
 	body {
-		color: $standard;
+		color: $col-standard;
 		font-family: $base-font-family;
 		font-size: $base-font-size;
 		line-height: $base-line-height;
@@ -63,9 +63,9 @@
 
 	h1, h2, h3, h4, h5, h6,
 	.h1, .h2, .h3, .h4, .h5, .h6 {
-		color: $header;
-		font-family: $header-font-family;
-		font-weight: $header-weight;
+		color: $col-header;
+		font-family: $col-header-font-family;
+		font-weight: $col-header-weight;
 		margin:1em 0 0.35em 0;
 	}
 	
@@ -145,14 +145,14 @@
 	------------------------------------------ */
 
 	a {
-		color: $link;
+		color: $col-link;
 		cursor: pointer;
 		text-decoration:none;
 		&:visited {
 
 		}
 		&:hover {
-			color: $link-hover;
+			color: $col-link-hover;
 		}
 		&:active {
 			
@@ -173,7 +173,7 @@
 	
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 	.h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
-		color: $header;
+		color: $col-header;
 	}
 
 
