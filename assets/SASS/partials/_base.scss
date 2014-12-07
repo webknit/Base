@@ -64,8 +64,8 @@
 	h1, h2, h3, h4, h5, h6,
 	.h1, .h2, .h3, .h4, .h5, .h6 {
 		color: $col-header;
-		font-family: $col-header-font-family;
-		font-weight: $col-header-weight;
+		font-family: $header-font-family;
+		font-weight: $weight-header;
 		margin:1em 0 0.35em 0;
 	}
 	

@@ -47,16 +47,17 @@
 	/* - 3.1. - FONT WEIGHTS
 	------------------------------------------ */
 
-	$light: 100;
-	$regular: 400;
-	$bold: 600;
-	$col-header-weight: 700;
+	$weight-light: 100;
+	$weight-regular: 400;
+	$weight-bold: 600;
+	
+	$weight-header: $weight-bold;
 
 	/* - 3.1. - BASE FONTS
 	------------------------------------------ */
 	
 	$base-font-family: Cambria, Georgia, serif;
-	$base-font-weight: $regular;
+	$base-font-weight: $weight-regular;
 	$base-font-size: 1em;
 	$base-line-height: 1.4;
 	
@@ -64,7 +65,7 @@
 	/* - 3.2. - HEADER FONTS
 	------------------------------------------ */
 	
-	$col-header-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	$header-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	
 	
 	
