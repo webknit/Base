@@ -46,6 +46,16 @@ module.exports = function(grunt) {
 	        	},
 	        },
 	    },
+	    
+	    autoprefixer: {
+			single_file: {
+				options: {
+					browsers: ['last 2 versions', 'ie 8', 'ie 9']
+				},
+				src: 'style.css',
+				dest: 'style.css'
+		    },
+		},
 		
 		watch: {
 			options: {
@@ -61,7 +71,7 @@ module.exports = function(grunt) {
 		    },
 		    sass: {
 			    files: ['assets/SASS/{,*/}*.{scss,sass}'],
-			    tasks: ['compass'],
+			    tasks: ['compass', 'autoprefixer'],
 			    options: {
 			        spawn: false,
 			    }
@@ -77,6 +87,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('deploy', ['concat', 'imagemin', 'compass']);
