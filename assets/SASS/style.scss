@@ -125,13 +125,13 @@
 	------------------------------------------ */
 	
 	.header {
-		background: #FFFFFF;
+		background: $col-white;
 		padding: 1em;
 		text-align: center;
 	}
 
 	.intro {
-		background: #d8544b;
+		background: $col-black;
 		padding: 5em 0;
 		text-align: center;
 		@include breakpoint(medium) {
@@ -148,7 +148,7 @@
 	
 	.section {
 		.row {
-			border-bottom: 1px solid rgba(0,0,0,0.1);
+			border-bottom: 1px solid $col-black;
 			margin: 0.625em 0;
 			padding: 0.625em 0;
 			&:last-child {
@@ -158,7 +158,7 @@
 	}
 	
 	.round-corner-box {
-		border: 1px solid rgba(239,142,128,1);
+		border: 1px solid $col-black;
 		margin: 5px 0 0.938em;
 		padding: 0.625em 0.938em;
 		-moz-border-radius: 5px;
@@ -173,7 +173,7 @@
 	.animate {
 		cursor: pointer;
 		&:hover {
-			color: #d8544b;
+			color: $col-black;
 			@include transition(color, 1s, linear, 0s);
 		}
 	}
@@ -181,8 +181,8 @@
 	.grid .one_twelve, .grid .two_twelve, .grid .three_twelve, .grid .four_twelve, 
 	.grid .five_twelve, .grid .six_twelve, .grid .seven_twelve, .grid .eight_twelve, 
 	.grid .nine_twelve, .grid .ten_twelve, .grid .eleven_twelve, .grid .twelve_twelve {
-		background: #ef8e80;
-	    color: #ffffff;
+		background: $col-black;
+	    color: $col-white;
 	    height: 3.125em;
 	}
 	

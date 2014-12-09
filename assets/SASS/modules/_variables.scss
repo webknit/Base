@@ -24,6 +24,9 @@
 
 	/* Find colour names - http://chir.ag/projects/name-that-color/ */
 	
+	$col-white: #ffffff;
+	$col-black: #000000;
+	
 	$col-mine-shaft: #333333;
 	$col-cod-gray: #141414;
 	$col-red-damask: #d8544b;
@@ -33,6 +36,8 @@
 	$col-header: $col-cod-gray;
 	$col-link: $col-red-damask;
 	$col-link-hover: $col-sunglo;
+	
+	$col-blockquote: $col-red-damask;
 
 	
 /*********************************************
