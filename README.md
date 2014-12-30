@@ -39,7 +39,6 @@ The modules directory is reserved for Sass code that doesn't cause Sass to actua
 - _variables.scss - Colours, Gradients, Typography
 - _functions.scss - All the functions go in here
 - _mixins.scss - All the mixins go in here
-- _vendor.scss - The vendor directory is for third-party CSS
 
 
 SASS Partials
@@ -48,6 +47,7 @@ SASS Partials
 The partials directory is where most of the CSS is constructed. Plan ahead and think how to structure these.
 
 - _reset.scss - Reset, including HTML5
+- _vendor.scss - The vendor directory is for third-party CSS
 - _base.scss - All the base elements, HTML, body, container, headers, links, img, blockquote etc
 - _buttons.scss - Button styles
 - _forms.scss - Form styles
