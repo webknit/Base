@@ -22,16 +22,13 @@
 	- 1.0 -  STRUCTURE
 *********************************************/
 
-	*, *:before, *:after {
-	  -moz-box-sizing: border-box; 
-	  	-webkit-box-sizing: border-box; 
-	  		box-sizing: border-box;
+	*, *:before, *:after { 
+	  	box-sizing: border-box;
 	}
 
 	html { 
 		font-size: 100%; 
-		-webkit-text-size-adjust: 100%; 
-		-ms-text-size-adjust: 100%; 
+		text-size-adjust: 100%; 
 	}
 	
 	body {
@@ -66,7 +63,7 @@
 		color: $col-header;
 		font-family: $header-font-family;
 		font-weight: $weight-header;
-		margin:1em 0 0.35em 0;
+		margin: 1em 0 0.35em 0;
 	}
 	
 	h1, .h1 {

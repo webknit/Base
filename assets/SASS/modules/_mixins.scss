@@ -5,18 +5,14 @@
 	Author URL:http://www.webknit.co.uk
 	Template URL:http://base.webknit.co.uk/
 	Notes: 
-		border-radius, transition, animation & button-gradient can all be achieved using Compass.
-		However I've left them in for those who aren't using compass.
+		border-radius, transition, animation & button-gradient have all been removed and replaced by Compass.
 */
 
 
 /* - CONTENTS
 -------------------------------------------------
 	- Mixins  .............................. 1.0.
-	- Border radius  ....................... 2.0.
-	- Transition  .......................... 3.0.
-	- Animation  ........................... 4.0.
-	- SVG BG-img Fallback  ................. 5.0.
+	- SVG BG-img Fallback  ................. 2.0.
 */
 
 
@@ -38,42 +34,7 @@
 	
 	
 /*********************************************
-	- 2.0 -  BORDER RADIUS
-*********************************************/
-
-	@mixin border-radius($radius) {
-	  	-moz-border-radius: $radius;
-	  		-webkit-border-radius: $radius;
-	  			border-radius: $radius;
-	}
-	
-	
-/*********************************************
-	- 3.0 -  TRANSITION
-*********************************************/
-	
-	@mixin transition ($which,$speed,$method,$delay) {
-		-webkit-transition:$which $speed $method $delay;
-			-moz-transition: $which $speed $method $delay;
-				-o-transition: $which $speed $method $delay;
-						transition: $which $speed $method $delay;
-	}
-	
-	
-/*********************************************
-	- 4.0 -  ANIMATION
-*********************************************/	
-	
-	@mixin animation ($which,$speed,$method,$delay) {
-		-webkit-animation:$which $speed $method $delay;
-			-moz-animation: $which $speed $method $delay;
-				-o-animation: $which $speed $method $delay;
-						animation: $which $speed $method $delay;
-	}
-	
-	
-/*********************************************
-	- 5.0 -  SVG BG-IMG FALLBACK
+	- 2.0 -  SVG BG-IMG FALLBACK
 *********************************************/
 	
 	// Sass mixin for SVG with fallback support using the invisible gradient technique
