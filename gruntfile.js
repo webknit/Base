@@ -4,6 +4,10 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         concat: {
+        	dev: {
+		      src: ['assets/js/plugins.js', 'assets/js/script.js', 'assets/js/dev.js'],
+		      dest: 'assets/js/script.min.js'
+		    },
             dist: {
 		      src: ['assets/js/plugins.js', 'assets/js/script.js'],
 		      dest: 'assets/js/script.min.js'
@@ -19,7 +23,7 @@ module.exports = function(grunt) {
 		},
         
         jshint: {
-		  files: ['assets/js/*.js'],
+		  files: ['assets/js/script.js'],
 		},
 		
 		imagemin: {
@@ -63,7 +67,7 @@ module.exports = function(grunt) {
 		    },
 		    scripts: {
 		    	files: 'assets/JS/{,*/}*.js',
-		        tasks: ['jshint', 'concat', 'uglify'],
+		        tasks: ['jshint', 'concat:dev', 'uglify'],
 		        options: {
 		        	style: 'compressed',
 		            spawn: false,
@@ -90,6 +94,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
 
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('deploy', ['concat', 'uglify', 'imagemin', 'compass', 'autoprefixer']);
+    grunt.registerTask('deploy', ['concat:dist', 'uglify', 'imagemin', 'compass', 'autoprefixer']);
 
 };
