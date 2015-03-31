@@ -254,6 +254,20 @@
 	/* - 3.5. - FORM ELEMENTS 
 	------------------------------------------ */
 
+	input[type=text],
+	input[type=email],
+	input[type=tel],
+	input[type=url],
+	input[type=search],
+	input[type=submit] {
+		appearance: none;
+			-moz-appearance: none;
+				-webkit-appearance: none;
+		border-radius: 0;
+			-moz-border-radius: 0;
+				-webkit-border-radius: 0;
+	}
+
 	input, 
 	textarea {
 		background: rgba(255,255,255,1);
