@@ -167,7 +167,7 @@
 	
 	blockquote {
 		background: #d8544b;
-		color: rgba(255,255,255,1);
+		color: #ffffff;
 		font-size: 1.1em;
 		font-style: italic;
 		margin: 0 0 1.250em 1.250em;
@@ -185,7 +185,7 @@
 	a {
 		color: #d8544b;
 		cursor: pointer;
-		text-decoration:none;
+		text-decoration: none;
 	}
 	
 	a:visited { 
@@ -215,7 +215,7 @@
 	
 	a.button {
 		background: #d8544b;
-	    color: rgba(255,255,255,1);
+	    color: #ffffff;
 	    display: inline-block;
 	    float: left;
 	    margin-bottom: 0.625em;
@@ -270,7 +270,7 @@
 
 	input, 
 	textarea {
-		background: rgba(255,255,255,1);
+		background: #d8544b;
 		border: 1px solid rgba(0,0,0,0.2);
 		display: block;
 		font-family: Cambria, Georgia, serif;
@@ -292,7 +292,7 @@
 	input[type=submit] {
 		background: #d8544b;
 		border: none;
-		color: rgba(255,255,255,1);
+		color: #ffffff;
 		cursor: pointer;
 	    display: inline-block;
 	    padding: 0.438em 0.938em;
