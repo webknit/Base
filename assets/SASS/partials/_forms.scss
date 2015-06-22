@@ -39,6 +39,7 @@
 	input, 
 	textarea {
 		border: 1px solid $col-black;
+		border-radius: 0.125em;
 		display: block;
 		font-family: $base-font-family;
 		font-size: $base-font-size;
@@ -47,7 +48,6 @@
 		outline: none;
 		padding: 0.375em 1%;
 		width: 100%;
-		@include border-radius (0.125em);
 	}
 	
 	.input[type=email] {

@@ -1,4 +1,4 @@
-♥ Base V1.4.4 ♥ 
+♥ Base V2.0.0 ♥ 
 ===============
 
 Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project.
@@ -20,15 +20,13 @@ Base is not an extensive template that offers a ton of code that means a develop
 View the website at www.base.webknit.co.uk
 
 
-Grunt
+Gulp - Start Guide
 --------
 
-Grunt is a task runner that can dramatically improve your front-end development workflow. With the use of a number of grunt plugins you can automate tasks such as compiling SASS and CoffeeScript, optimizing images and validating your JavaScript code with JSHint.
-
-To find out more regardless of whether you are using Grunt or not then have a read of the following post.
-http://shaneprendergast.co.uk/css/a-guide-to-base/
-
-REMEMBER you don't have to use Grunt or SASS, read the post above for more info.
+- Need to ensure you have everything on your machine
+- Run npm install --global gulp
+- Run npm install to install everything (might need sudo)
+- gulp to run it
 
 
 SASS Modules
@@ -66,6 +64,7 @@ Do what's best for you and your project.
 Log
 ---
 
+- V2.0.0 (23/06/2015) - New folder structure and swapping Grunt for Gulp
 - V1.4.4 (07/12/2014) - Introducing new way of writing colour variables in SASS
 - V1.4.3 (22/09/2014) - Importing Compass to the SASS files
 - V1.4.2 (12/08/2014) - Including Susy SASS & new CSS grids based on Susy output

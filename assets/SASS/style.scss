@@ -15,10 +15,9 @@
 /* - CONTENTS
 -------------------------------------------------
 	- SASS modules ......................... 1.0.
-		- Compass .......................... 1.1.
-    	- Variables ........................ 1.2.
-    	- Functions .........................1.3.
-    	- Mixins ............................1.4.
+    	- Variables ........................ 1.1.
+    	- Functions .........................1.2.
+    	- Mixins ............................1.3.
     - CSS Reset ............................ 2.0.
     	- Main reset ........................2.1.
     - SASS partials ........................ 3.0.
@@ -38,25 +37,19 @@
 	Things like mixin declarations, functions, and variables.
 *********************************************/
 
-	/* - 1.1. - COMPASS
-	------------------------------------------ */
-	
-	@import "compass";
-
-
-	/* - 1.2. - COLOURS, GRADIENTS, TYPOGRAPHY
+	/* - 1.1. - COLOURS, GRADIENTS, TYPOGRAPHY
 	------------------------------------------ */
 	
 	@import "modules/_variables";
 
 
-	/* - 1.3. - FUNCTIONS
+	/* - 1.2. - FUNCTIONS
 	------------------------------------------ */
 
 	@import "modules/_functions";
 	
 	
-	/* - 1.4. - MIXINS
+	/* - 1.3. - MIXINS
 	------------------------------------------ */
 
 	@import "modules/_mixins";
@@ -170,7 +163,7 @@
 		cursor: pointer;
 		&:hover {
 			color: $col-black;
-			@include transition(color, 1s, linear, 0s);
+			transition: color, 1s, linear, 0s;
 		}
 	}
 
