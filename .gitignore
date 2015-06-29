@@ -1,5 +1,8 @@
-node_modules
-node_modules/*
+/assets/node_modules
+/assets/node_modules/*
 
-.sass-cache
-.sass-cache/*
+/assets/.sass-cache
+/assets/.sass-cache/*
+assets/bower_components/
+site/scripts/script.js
+site/css/style.css
