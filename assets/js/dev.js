@@ -5,6 +5,6 @@
 	Author URL:http://www.webknit.co.uk
 	Template URL:http://base.webknit.co.uk/
 	
-	You can read more abotu this file - http://shaneprendergast.co.uk/web-design/dev-js/
+	You can read more about this file - http://shaneprendergast.co.uk/web-design/dev-js/
 */
 
