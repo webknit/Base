@@ -19,13 +19,13 @@
 
 	a.button {
 		background: $col-link;
-		border-radius: 0.188em;
+		border-radius: 0.188rem;
 	    color: $col-white;
 	    display: inline-block;
 	    float: left;
-	    margin-bottom: 0.625em;
+	    margin-bottom: 0.625rem;
 	    outline: 0 none;
-	    padding: 0.438em 0.938em;
+	    padding: 0.438rem 0.938rem;
 	    width: auto;
 	    &:hover {
 	    	background: $col-link-hover;

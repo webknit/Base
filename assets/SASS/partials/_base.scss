@@ -43,7 +43,7 @@
 	    margin: 0 auto;
 	    width: 96%;
 	    @include breakpoint(large) {
-			max-width: 73.125em;
+			max-width: 73.125rem;
 			margin: 0 auto;
 			width: 100%;
 		}
@@ -63,35 +63,35 @@
 		color: $col-header;
 		font-family: $header-font-family;
 		font-weight: $weight-header;
-		margin: 0 0 1em;
+		margin: 0 0 1rem;
 	}
 	
 	h1, .h1 {
-		font-size: 2em;
+		font-size: 2rem;
 	}
 	
 	h2, .h2 {
-		font-size: 1.75em;
+		font-size: 1.75rem;
 	}
 	
 	h3, .h3 {
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
 	
 	h4, .h4 {
-		font-size: 1.4em;
+		font-size: 1.4rem;
 	}
 	
 	h5, .h5 {
-		font-size: 1.3em;
+		font-size: 1.3rem;
 	}
 	
 	h6, .h6 {
-		font-size: 1.2em;
+		font-size: 1.2rem;
 	}
 	
 	small {
-		font-size: 0.85em;
+		font-size: 0.85rem;
 	}
 	
 	ul li {
@@ -111,7 +111,7 @@
 	}
 	
 	p {
-		margin-bottom: 1em
+		margin-bottom: 1rem
 	}
 	
 	img, object, embed {
@@ -122,10 +122,10 @@
 	blockquote {
 		background: $col-blockquote;
 		color: $col-white;
-		font-size: 1.1em;
+		font-size: 1.1rem;
 		font-style: italic;
-		margin: 0 0 1.250em 1.250em;
-		padding: 0.625em 1.250em 1.250em;
+		margin: 0 0 1.250rem 1.250rem;
+		padding: 0.625rem 1.250rem 1.250rem;
 		p {
 			&:last-child {
 				margin-bottom: 0;

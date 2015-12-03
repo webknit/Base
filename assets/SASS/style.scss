@@ -114,22 +114,22 @@
 	
 	.header {
 		background: $col-white;
-		padding: 1em;
+		padding: 1rem;
 		text-align: center;
 	}
 
 	.intro {
 		background: $col-black;
-		padding: 5em 0;
+		padding: 5rem 0;
 		text-align: center;
 		@include breakpoint(medium) {
-			padding: 10em 0;
+			padding: 10rem 0;
 		}
 		h2 {
 			color: #ffffff;
 			margin: 0;
 			@include breakpoint(medium) {
-				font-size: 4.5em;
+				font-size: 4.5rem;
 			}	
 		}
 	}
@@ -137,8 +137,8 @@
 	.section {
 		.row {
 			border-bottom: 1px solid $col-black;
-			margin: 0.625em 0;
-			padding: 0.625em 0;
+			margin: 0.625rem 0;
+			padding: 0.625rem 0;
 			&:last-child {
 				border-bottom: none;
 			}
@@ -148,8 +148,8 @@
 	.round-corner-box {
 		border: 1px solid $col-black;
 		border-radius: 5px;
-		margin: 5px 0 0.938em;
-		padding: 0.625em 0.938em;
+		margin: 5px 0 0.938rem;
+		padding: 0.625rem 0.938rem;
 	}
 	
 	p.text-shadow {
@@ -169,18 +169,18 @@
 	.grid .nine_twelve, .grid .ten_twelve, .grid .eleven_twelve, .grid .twelve_twelve {
 		background: $col-black;
 	    color: $col-white;
-	    height: 3.125em;
+	    height: 3.125rem;
 	}
 	
 	.footer {
 		border-top: 1px solid rgba(0,0,0,0.1);
 		clear: both;
-		margin: 0.625em 0;
-		padding: 2em 0;
+		margin: 0.625rem 0;
+		padding: 2rem 0;
 		text-align: center;
 		p {
 			@include breakpoint(medium) {
-				margin: 0 auto 2em;
+				margin: 0 auto 2rem;
 				max-width: 60%;
 			}
 		}

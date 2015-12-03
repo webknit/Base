@@ -39,14 +39,14 @@
 	input, 
 	textarea {
 		border: 1px solid $col-black;
-		border-radius: 0.125em;
+		border-radius: 0.125rem;
 		display: block;
 		font-family: $base-font-family;
 		font-size: $base-font-size;
 		margin: 0;
-		margin-bottom: 1.250em;
+		margin-bottom: 1.250rem;
 		outline: none;
-		padding: 0.375em 1%;
+		padding: 0.375rem 1%;
 		width: 100%;
 	}
 	
@@ -55,11 +55,11 @@
 	}
 	
 	input {
-		max-width: 12.500em;
+		max-width: 12.500rem;
 	}
 	
 	textarea {
-		max-width: 25.000em;
+		max-width: 25.000rem;
 	}
 	
 	input[type=submit] {
@@ -68,7 +68,7 @@
 		color: $col-white;
 		cursor: pointer;
 	    display: inline-block;
-	    padding: 0.438em 0.938em;
+	    padding: 0.438rem 0.938rem;
 	    width: auto;
 	    &:hover {
 	    	background: #e2766f;

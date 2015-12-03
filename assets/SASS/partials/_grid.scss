@@ -44,7 +44,7 @@
 	.one_twelve, .two_twelve, .three_twelve, .four_twelve,
 	.five_twelve, .six_twelve, .seven_twelve, .eight_twelve,
 	.nine_twelve, .ten_twelve, .eleven_twelve, .twelve_twelve {
-		margin: 0 0 0.625em 0;
+		margin: 0 0 0.625rem 0;
 		padding: 1px 0.5%;
 		@include span(12 of 12)
 	}
