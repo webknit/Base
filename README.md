@@ -1,4 +1,4 @@
-♥ Base V2.0.0 ♥ 
+♥ Base V2.0.1 ♥ 
 ===============
 
 Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project.
@@ -64,6 +64,7 @@ Do what's best for you and your project.
 Log
 ---
 
+- V2.0.1 (23/06/2015) - Swapping EMs for REMs
 - V2.0.0 (23/06/2015) - New folder structure and swapping Grunt for Gulp
 - V1.4.4 (07/12/2014) - Introducing new way of writing colour variables in SASS
 - V1.4.3 (22/09/2014) - Importing Compass to the SASS files
