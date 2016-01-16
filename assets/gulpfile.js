@@ -15,7 +15,7 @@ var notify = require('gulp-notify');
 var paths = {
 	assets: {
 		js: 'js/',
-		css: './SASS/',
+		css: 'SASS/',
 		html: '../site/'
 	},
 	output: {
