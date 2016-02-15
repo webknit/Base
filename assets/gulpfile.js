@@ -25,6 +25,9 @@ var paths = {
 	}
 };
 
+// If you are running the site with a different webserver change this to the URL of the site e.g. localhost:8888
+var proxy = '';
+
 gulp.task('styles:dev', function () {
 	gulp.src(paths.assets.css + '**/*.scss')
 		.pipe(cssGlobbing({
@@ -124,9 +127,14 @@ gulp.task('images', function() {
 });
 
 gulp.task('default', ['scripts:dev', 'styles:dev'], function () {
-	browserSync.init([paths.output.js + '**/*.js'], {
-        server: "../site"
-    });
+	var settings = {};
+	if(proxy !== '') {
+		settings.proxy = proxy;
+	} else {
+		settings.server = '../site';
+	}
+	
+	browserSync.init([paths.output.js + '**/*.js'], settings);
 	// Watch .js files
 	gulp.watch(paths.assets.js + '**/*.js', ['scripts:dev']);
 	// Watch .scss files
