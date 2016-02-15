@@ -59,7 +59,7 @@
 	/* - 2.1. - RESET INCLUDING HTML5
 	------------------------------------------ */
 	
-	@import "partials/_reset";
+	@import "partials/base/_reset";
 	
 
 /*********************************************
@@ -69,145 +69,46 @@
 	/* - 3.1. - VENDOR
 	------------------------------------------ */
 
-	@import "partials/_vendor";
+	@import "partials/base/_vendor";
 	
 	
 	/* - 3.2. - BASE ELEMENTS, STRUCTURE, TYPOGRAPHY, LINKS
 	------------------------------------------ */
 	
-	@import "partials/_base";
+	@import "partials/base/_base";
 	
 	
 	/* - 3.3. - BUTTONS 
 	------------------------------------------ */
 	
-	@import "partials/_buttons";
+	@import "partials/base/_buttons";
 	
 	
 	/* - 3.4. - FORMS 
 	------------------------------------------ */
 	
-	@import "partials/_forms";
+	@import "partials/base/_forms";
 
 
 /*********************************************
 	- 4.0 -  GRIDS
 *********************************************/
 
-	@import "partials/_grid";
+	@import "partials/base/_grid";
 
 
 /*********************************************
 	- 5.0 -  EXAMPLE SECTION
 *********************************************/
 	
-	/* BASE TEMPLATE FILES (THESE CAN BE DELETED AND REPLACED WITH OWN STYLES)
-	
-	You can have a read of this article to understand the structure of the SASS.
-	http://www.shaneprendergast.co.uk/css/base-has-changed/
-	
-	Consider adding seperate partials for each section of a site header, footer, sidebar
-	http://smacss.com/
-	
-	See .example class below to understand how the media queries work
-	------------------------------------------ */
-	
-	.header {
-		background: $col-white;
-		padding: 1rem;
-		text-align: center;
-	}
-
-	.intro {
-		background: $col-black;
-		padding: 5rem 0;
-		text-align: center;
-		@include breakpoint(medium) {
-			padding: 10rem 0;
-		}
-		h2 {
-			color: #ffffff;
-			margin: 0;
-			@include breakpoint(medium) {
-				font-size: 4.5rem;
-			}	
-		}
-	}
-	
-	.section {
-		.row {
-			border-bottom: 1px solid $col-black;
-			margin: 0.625rem 0;
-			padding: 0.625rem 0;
-			&:last-child {
-				border-bottom: none;
-			}
-		}
-	}
-	
-	.round-corner-box {
-		border: 1px solid $col-black;
-		border-radius: 5px;
-		margin: 5px 0 0.938rem;
-		padding: 0.625rem 0.938rem;
-	}
-	
-	p.text-shadow {
-		text-shadow: 0 1px 1px #d8544b;
-	}
-	
-	.animate {
-		cursor: pointer;
-		&:hover {
-			color: $col-black;
-			transition: color, 1s, linear, 0s;
-		}
-	}
-
-	.grid .one_twelve, .grid .two_twelve, .grid .three_twelve, .grid .four_twelve, 
-	.grid .five_twelve, .grid .six_twelve, .grid .seven_twelve, .grid .eight_twelve, 
-	.grid .nine_twelve, .grid .ten_twelve, .grid .eleven_twelve, .grid .twelve_twelve {
-		background: $col-black;
-	    color: $col-white;
-	    height: 3.125rem;
-	}
-	
-	.footer {
-		border-top: 1px solid rgba(0,0,0,0.1);
-		clear: both;
-		margin: 0.625rem 0;
-		padding: 2rem 0;
-		text-align: center;
-		p {
-			@include breakpoint(medium) {
-				margin: 0 auto 2rem;
-				max-width: 60%;
-			}
-		}
-	}
-
-	.example {
-		color: red;
-		@include breakpoint(medium) {
-			color: yellow;
-		}
-		@include breakpoint(large) {
-			color: green;
-		}
-		@include breakpoint(retina) {
-			background: url(logo2x.jpg) no-repeat;
-			background-size: 212px 303px;
-		}
-	}
-	
-	/* BASE TEMPLATE STYLES END */
+	@import "partials/components/_example";
 
 
 /*********************************************
 	- 0.0 -  @FONT-FACE
 *********************************************/
 	
-	@import "partials/_font-face";
+	@import "partials/base/_font-face";
 	
 
 
