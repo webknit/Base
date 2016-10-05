@@ -1,32 +1,24 @@
-♥ Base V2.0.1 ♥ 
+♥ Base V2.1.0 ♥ 
 ===============
 
-Base is a front-end HTML5 template. Featuring the latest technologies and impeccable code this download is the ideal starting point for any web project.
+Base is a front-end HTML5 template. Featuring the latest technologies and neat code this download is the ideal starting point for any web project.
 
 
 Features
 --------
 
-Base is a CSS/SASS/HTML5 based mobile first front end template which is impeccably neat and tidy and is an ideal starting point for a web project of any size.
+Base is a CSS/SASS/HTML5 based mobile first front end template which is impeccably neat and tidy and is an ideal starting point for a web project of any size. It makes use of gulp, alongside some npm packages, to offer a quick and easy development process.
 
-Base is for developers who want a platform to start their web projects. Base offers the fundamental parts of a web project that a developer can then build upon.
-
-Base is extremely lightweight and is ready to go straight out of the box. Download the files. Choose either CSS/SASS for your stylesheet language and then get coding. The files are impeccably neat and generously commented and they include markup and style examples.
-
-Base uses a mobile first/progressive enhancement approach. It offers some basic features such as media queries, but it’s also very modular so if you don’t want something then take it out. Chances are you will use everything that’s in there though.
-
-Base is not an extensive template that offers a ton of code that means a developer doesn’t have to do much coding. Only an amateurish developer would use those. ;-) 
-
-View the website at www.base.webknit.co.uk
+If you've any questions feel free to contact me @webknit.
 
 
 Gulp - Start Guide
 --------
 
-- Need to ensure you have everything on your machine
-- Run npm install --global gulp
-- Run npm install to install everything (might need sudo)
-- gulp to run it
+- Open command line
+- Run 'npm install --global gulp'
+- Run 'npm install' to install everything (might need sudo on mac)
+- 'gulp' to run it
 
 
 SASS Modules
@@ -52,18 +44,10 @@ The partials directory is where most of the CSS is constructed. Plan ahead and t
 - _font-face.scss - Font face stuff
 
 
-Structuring your projects
--------------
-
-This is a developer preference. There is no offical way.
-Do you want all your pages in partials?
-Would you rather just add main components and still use style.scss for the bulk of the CSS?
-Do what's best for you and your project.
-
-
 Log
 ---
 
+- V2.1.0 (05/10/2016) - Updating packages & packages.json
 - V2.0.1 (23/06/2015) - Swapping EMs for REMs
 - V2.0.0 (23/06/2015) - New folder structure and swapping Grunt for Gulp
 - V1.4.4 (07/12/2014) - Introducing new way of writing colour variables in SASS
@@ -91,7 +75,7 @@ Log
 Who's behind this?
 -------------
 
-Base is proudly made by Webknit and is the result of many hours working on projects of all sizes. It is driven by a massive enthusiasm for all things web.
+Base was made by me, Shane Prendergast a.k.a Webknit - www.webknit.co.uk
 
-Base is constantly updated and modified to ensure it stays on top of the game. If you’ve any suggestions or ideas then don’t hesitate to get in touch. 
+If you’ve any suggestions or ideas then don’t hesitate to get in touch. 
 
