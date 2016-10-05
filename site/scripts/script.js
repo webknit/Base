@@ -1,1 +1,38 @@
-window.log=function(){if(log.history=log.history||[],log.history.push(arguments),this.console){var o,n=arguments;n.callee=n.callee.caller,o=[].slice.call(n),"object"==typeof console.log?log.apply.call(console.log,console,o):console.log.apply(console,o)}},function(o){function n(){}for(var l,e="assert,count,debug,dir,dirxml,error,exception,group,groupCollapsed,groupEnd,info,log,markTimeline,profile,profileEnd,time,timeEnd,trace,warn".split(",");l=e.pop();)o[l]=o[l]||n}(function(){try{return console.log(),window.console}catch(o){return window.console={}}}());var Base=Base||{};Base.functionName=function(){function o(){l.click(n)}function n(){}var l=$(".variable");o()},$(function(){new Base.functionName});
+/* - BASE HTML TEMPLATE
+------------------------------------------------- 
+	Description: JS Scripts
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+*/
+
+// JS EXAMPLE
+
+var Base = Base || {};
+
+Base.functionName = function() {
+	
+	var variable = $('.variable');
+
+	function init() {
+
+		variable.click(functionOne);
+
+	}
+
+	function functionOne() {
+
+		// JS CODE
+
+	}
+
+	init();
+	
+};
+
+// ON DOC READY
+$(function() {
+	
+	new Base.functionName();
+	
+});
