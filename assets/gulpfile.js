@@ -60,7 +60,9 @@ gulp.task('styles:deploy', function () {
 			}))
 			.on('error', notify.onError())
 			.pipe(sass().on('error', sass.logError))
-			.pipe(autoprefix('last 2 version', 'ie9'))
+			.pipe(autoprefix({
+				browsers: ['last 2 version', 'ie 9', 'last 5 ios version']
+			}))
 		.pipe(sourcemaps.write())
 		.pipe(minifyCss({compatibility: 'ie8'}))
 		.pipe(gulp.dest(paths.output.css))
