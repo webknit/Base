@@ -46,7 +46,7 @@
 		margin: 0;
 		margin-bottom: 1.250rem;
 		outline: none;
-		padding: 0.375rem 1%;
+		padding: 1rem;
 		width: 100%;
 	}
 	
@@ -55,11 +55,11 @@
 	}
 	
 	input {
-		max-width: 12.500rem;
+		
 	}
 	
 	textarea {
-		max-width: 25.000rem;
+		
 	}
 	
 	input[type=submit] {
@@ -68,11 +68,15 @@
 		color: $col-white;
 		cursor: pointer;
 	    display: inline-block;
-	    padding: 0.438rem 0.938rem;
+	    padding: 0.5rem 1rem;
 	    width: auto;
 	    &:hover {
 	    	background: #e2766f;
 	    }
+	}
+
+	input[type=checkbox] {
+		width: auto;
 	}
 	
 
