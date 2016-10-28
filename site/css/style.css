@@ -77,6 +77,10 @@
     line-height: 1.4;
     margin: 0;
   }
+
+  body * + * {
+    margin-top: 1.5rem;
+  }
   
   .container {
       margin: 0 auto;
