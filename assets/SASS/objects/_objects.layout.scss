@@ -1,0 +1,13 @@
+.container {
+    margin: 0 auto;
+    width: 96%;
+    @include breakpoint(large) {
+		max-width: 73.125rem;
+		margin: 0 auto;
+		width: 100%;
+	}
+}
+
+.row {
+	overflow: hidden;
+}

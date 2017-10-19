@@ -1,0 +1,52 @@
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=submit] {
+	appearance: none;
+	border-radius: 0;
+}
+
+input, 
+textarea {
+	border: 1px solid $col-black;
+	border-radius: 0.125rem;
+	display: block;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	margin: 0;
+	margin-bottom: 1.250rem;
+	outline: none;
+	padding: 1rem;
+	width: 100%;
+}
+
+.input[type=email] {
+	
+}
+
+input {
+	
+}
+
+textarea {
+	
+}
+
+input[type=submit] {
+	background: $col-black;
+	border: none;
+	color: $col-white;
+	cursor: pointer;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    width: auto;
+    &:hover {
+    	background: #e2766f;
+    }
+}
+
+input[type=checkbox] {
+	width: auto;
+}

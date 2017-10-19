@@ -1,0 +1,58 @@
+// http://sass-variable-generator.webknit.co.uk/
+
+/*********************************************
+	COLOURS
+*********************************************/
+
+	/* Find colour names - http://chir.ag/projects/name-that-color/ */
+	
+	$col-white: #ffffff;
+	$col-black: #000000;
+	
+	$col-mine-shaft: #333333;
+	$col-cod-gray: #141414;
+	$col-red-damask: #d8544b;
+	$col-sunglo: #e2766f;
+
+	$col-standard: $col-mine-shaft;
+	$col-header: $col-cod-gray;
+	$col-link: $col-red-damask;
+	$col-link-hover: $col-sunglo;
+	
+	$col-blockquote: $col-red-damask;
+
+	
+/*********************************************
+	- 2.0 -  GRADIENTS
+*********************************************/
+	
+
+/*********************************************
+	- 3.0 -  TYPOGRAPHY
+*********************************************/
+
+	/* - 3.1. - FONT WEIGHTS
+	------------------------------------------ */
+
+	$weight-light: 100;
+	$weight-regular: 400;
+	$weight-bold: 600;
+	
+	$weight-header: $weight-bold;
+
+	/* - 3.1. - BASE FONTS
+	------------------------------------------ */
+	
+	$base-font-family: Cambria, Georgia, serif;
+	$base-font-weight: $weight-regular;
+	$base-font-size: 1rem;
+	$base-line-height: 1.4;
+	
+	
+	/* - 3.2. - HEADER FONTS
+	------------------------------------------ */
+	
+	$header-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	
+	
+	

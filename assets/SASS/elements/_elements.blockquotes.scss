@@ -1,0 +1,13 @@
+blockquote {
+	background: $col-blockquote;
+	color: $col-white;
+	font-size: 1.1rem;
+	font-style: italic;
+	margin: 0 0 1.250rem 1.250rem;
+	padding: 0.625rem 1.250rem 1.250rem;
+	p {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

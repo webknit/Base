@@ -1,116 +1,29 @@
-/* - BASE HTML TEMPLATE
-------------------------------------------------- 
-	Description: Base/Main CSS styles
-	Author: Shane Prendergast
-	Author URL: http://www.webknit.co.uk
-	Template URL: http://base.webknit.co.uk/
-	Notes: 
-		Base CSS styles and Mobile first approach. 
+/*
+
+Settings – used with preprocessors and contain font, colors definitions, etc.
+
+Tools – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers.
+
+Generic – reset and/or normalize styles, box-sizing definition, etc. This is the first layer which generates actual CSS.
+
+Elements – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.
+
+Objects – class-based selectors which define undecorated design patterns, for example media object known from OOCSS
+
+Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components
+
+Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+
 */
 
+@import 'settings/*';
+@import 'tools/*';
 
-/* - CONTENTS
--------------------------------------------------
-	- SASS modules ......................... 1.0.
-    	- Variables ........................ 1.1.
-    	- Functions .........................1.2.
-    	- Mixins ............................1.3.
-    - CSS Reset ............................ 2.0.
-    	- Main reset ........................2.1.
-    - SASS partials ........................ 3.0.
-    	- Vendor ............................3.1.
-    	- Base ............................. 3.2.
-    	- Buttons ...........................3.3.
-    	- Forms ............................ 3.4.
-    - Grids ................................ 4.0.
-    - Example section ...................... 5.0.
-    - @font-face ........................... 0.0.
-*/
-
-
-/*********************************************
-	- 1.0 -  SASS MODULES
-	The modules directory is reserved for Sass code that doesn't cause Sass to actually output CSS. 
-	Things like mixin declarations, functions, and variables.
-*********************************************/
-
-	/* - 1.1. - COLOURS, GRADIENTS, TYPOGRAPHY
-	------------------------------------------ */
-	
-	@import "modules/_variables";
-
-
-	/* - 1.2. - FUNCTIONS
-	------------------------------------------ */
-
-	@import "modules/_functions";
-	
-	
-	/* - 1.3. - MIXINS
-	------------------------------------------ */
-
-	@import "modules/_mixins";
-	
-	
-/*********************************************
-	- 2.0 -  CSS RESET
-*********************************************/
-
-	/* - 2.1. - RESET INCLUDING HTML5
-	------------------------------------------ */
-	
-	@import "partials/base/_reset";
-	
-
-/*********************************************
-	- 3.0 -  SASS PARTIALS
-*********************************************/
-
-	/* - 3.1. - VENDOR
-	------------------------------------------ */
-
-	@import "partials/base/_vendor";
-	
-	
-	/* - 3.2. - BASE ELEMENTS, STRUCTURE, TYPOGRAPHY, LINKS
-	------------------------------------------ */
-	
-	@import "partials/base/_base";
-	
-	
-	/* - 3.3. - BUTTONS 
-	------------------------------------------ */
-	
-	@import "partials/base/_buttons";
-	
-	
-	/* - 3.4. - FORMS 
-	------------------------------------------ */
-	
-	@import "partials/base/_forms";
-
-
-/*********************************************
-	- 4.0 -  GRIDS
-*********************************************/
-
-	@import "partials/base/_grid";
-
-
-/*********************************************
-	- 5.0 -  COMPONENTS
-*********************************************/
-	
-	@import "partials/components/*";
-
-
-/*********************************************
-	- 0.0 -  @FONT-FACE
-*********************************************/
-	
-	@import "partials/base/_font-face";
-	
-
+@import 'generic/*';
+@import 'elements/*';
+@import 'objects/*';
+@import 'components/*';
+@import 'utilities/*';
 
 
 

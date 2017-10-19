@@ -1,0 +1,67 @@
+@import "susy/susy";
+
+.one_twelve, .two_twelve, .three_twelve, .four_twelve,
+.five_twelve, .six_twelve, .seven_twelve, .eight_twelve,
+.nine_twelve, .ten_twelve, .eleven_twelve, .twelve_twelve {
+	margin: 0 0 0.625rem 0;
+	padding: 1px 0.5%;
+	@include span(12 of 12)
+}
+
+@include breakpoint(medium) {
+	.one_twelve {
+		@include span(1 of 12);
+	}
+	
+	.two_twelve {
+		@include span(2 of 12);
+	}
+	
+	.three_twelve {
+		@include span(3 of 12);
+	}
+	
+	.four_twelve {
+		@include span(4 of 12);
+	}
+	
+	.five_twelve {
+		@include span(5 of 12);
+	}
+	
+	.six_twelve {
+		@include span(6 of 12);
+	}
+	
+	.seven_twelve {
+		@include span(7 of 12);
+	}
+	
+	.eight_twelve {
+		@include span(8 of 12);
+	}
+	
+	.nine_twelve {
+		@include span(9 of 12);
+	}
+	
+	.ten_twelve {
+		@include span(10 of 12);
+	}
+	
+	.eleven_twelve {
+		@include span(11 of 12);
+	}
+	
+	.twelve_twelve {
+		@include span(12 of 12);
+	}
+	
+	.end-grid {
+		@include last;
+	}
+}
+
+@include breakpoint(large) {
+	
+}

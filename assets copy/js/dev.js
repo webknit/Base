@@ -1,0 +1,10 @@
+/* - BASE HTML TEMPLATE
+------------------------------------------------- 
+	Description: Dev.js
+	Author:Shane Prendergast
+	Author URL:http://www.webknit.co.uk
+	Template URL:http://base.webknit.co.uk/
+	
+	You can read more about this file - http://shaneprendergast.webknit.co.uk/web-design/dev-js/
+*/
+

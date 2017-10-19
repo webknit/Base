@@ -1,0 +1,34 @@
+button,
+a.button {
+	background: $col-link;
+	border-radius: 0.188rem;
+    color: $col-white;
+    display: inline-block;
+    float: left;
+    margin-bottom: 0.625rem;
+    outline: 0 none;
+    padding: 0.438rem 0.938rem;
+    width: auto;
+    &:hover {
+    	background: $col-link-hover;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	&:active {
+		opacity:0.9;
+	}
+}
+
+a.button-full-width {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	text-align: center; 
+	width: 100%;
+}
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
