@@ -2,7 +2,7 @@
 ===============
 
 Base is a front-end HTML5 template that I use at the start of the majority of my projects.
-As with many development things these days, it's subjective. But it works for me!
+As with many development things these days, it's subjective - but it works for me!
 
 
 Gulp - Start Guide
