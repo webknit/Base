@@ -1,53 +1,33 @@
 <!DOCTYPE html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
  
 <head>
 	
 	<meta charset="utf-8">
 	
-	<!-- 
-	Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/i/378 
-	-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<!--
-	DNS Prefetching
-	I've only included jquery but here are some more examples you could use (typekit, google analytics).
-
-	<link rel="dns-prefetch" href="//use.typekit.net">
+	Consider DNS Prefetching if required
 	<link rel="dns-prefetch" href="//google-analytics.com">
-
-	Read more below
-	http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers
 	-->
-	<link rel="dns-prefetch" href="//ajax.googleapis.com">
 	
 	<title></title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Webknit">
 	
-	<!-- Initialise advanced UI (Javascrip enabled) -->
 	<script>document.documentElement.className += ' advanced';</script>
 	
-	<!-- Mobile viewport optimized: h5bp.com/viewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 	
-	<!-- favicon and apple-touch-icon.png. More info @ mathiasbynens.be/notes/touch-icons -->
+	<!-- 
+		Touch icons - https://mathiasbynens.be/notes/touch-icons 
+		https://css-tricks.com/favicon-quiz/
+	-->
 	<link rel="shortcut icon" href="PATH/TO/favicon.png" />
 	
-	<!-- Single CSS stylesheet with multiple break points - one for the CSS styles of each module where multiple screen sizes need to be addressed.  -->
 	<link rel="stylesheet" href="css/style.css" media="screen">
-	
-	<!--Internet Explorer up to version 8.0 can't read HTML5 tags properly, you can't style them.-->
-	<!--[if lt IE 9]>
-	   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 
 </head>
 
