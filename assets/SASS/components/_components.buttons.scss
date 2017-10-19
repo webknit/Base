@@ -1,5 +1,5 @@
 button,
-a.button {
+.c-button {
 	background: $col-link;
 	border-radius: 0.188rem;
     color: $col-white;
@@ -19,7 +19,7 @@ a.button {
 	}
 }
 
-a.button-full-width {
+.c-button-full-width {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 	text-align: center; 

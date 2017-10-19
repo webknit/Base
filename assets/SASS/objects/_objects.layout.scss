@@ -1,4 +1,4 @@
-.container {
+.o-container {
     margin: 0 auto;
     width: 96%;
     @include breakpoint(large) {
@@ -8,6 +8,6 @@
 	}
 }
 
-.row {
+.o-row {
 	overflow: hidden;
 }

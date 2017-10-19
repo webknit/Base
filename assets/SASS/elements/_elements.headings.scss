@@ -1,31 +1,31 @@
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.e-h1, .e-h2, .e-h3, .e-h4, .e-h5, .e-h6 {
 	color: $col-header;
 	font-family: $font-stack-header;
 	font-weight: $font-weight-bold;
 	margin: 0 0 1rem;
 }
 
-h1, .h1 {
+h1, .e-h1 {
 	font-size: $font-size-h1;
 }
 
-h2, .h2 {
+h2, .e-h2 {
 	font-size: $font-size-h2;
 }
 
-h3, .h3 {
+h3, .e-h3 {
 	font-size: $font-size-h3;
 }
 
-h4, .h4 {
+h4, .e-h4 {
 	font-size: $font-size-h4;
 }
 
-h5, .h5 {
+h5, .e-h5 {
 	font-size: $font-size-h5;
 }
 
-h6, .h6 {
+h6, .e-h6 {
 	font-size: $font-size-h6;
 }
