@@ -1,15 +1,8 @@
-♥ Base V2.1.0 ♥ 
+♥ Base V3.0.0 ♥ 
 ===============
 
-Base is a front-end HTML5 template. Featuring the latest technologies and neat code this download is the ideal starting point for any web project.
-
-
-Features
---------
-
-Base is a CSS/SASS/HTML5 based mobile first front end template which is impeccably neat and tidy and is an ideal starting point for a web project of any size. It makes use of gulp, alongside some npm packages, to offer a quick and easy development process.
-
-If you've any questions feel free to contact me @webknit.
+Base is a front-end HTML5 template that I use at the start of the majority of my projects.
+As with many development things these days, it's subjective. But it works for me!
 
 
 Gulp - Start Guide
@@ -18,35 +11,14 @@ Gulp - Start Guide
 - Open command line
 - Run 'npm install --global gulp'
 - Run 'npm install' to install everything (might need sudo on mac)
-- 'gulp' to run it
-
-
-SASS Modules
--------------
-
-The modules directory is reserved for Sass code that doesn't cause Sass to actually output CSS. Things like mixin declarations, functions, and variables.
-
-- _variables.scss - Colours, Gradients, Typography
-- _functions.scss - All the functions go in here
-- _mixins.scss - All the mixins go in here
-
-
-SASS Partials
--------------
-
-The partials directory is where most of the CSS is constructed. Plan ahead and think how to structure these.
-
-- _reset.scss - Reset, including HTML5
-- _vendor.scss - The vendor directory is for third-party CSS
-- _base.scss - All the base elements, HTML, body, container, headers, links, img, blockquote etc
-- _buttons.scss - Button styles
-- _forms.scss - Form styles
-- _font-face.scss - Font face stuff
+- Run 'gulp' to start
+- Run 'gulp deploy' to deploy
 
 
 Log
 ---
 
+- V3.0.0 (19/10/2017) - Swapping to an ITCSS approach, allowing ES6 with Babel
 - V2.1.0 (05/10/2016) - Updating packages & packages.json
 - V2.0.1 (23/06/2015) - Swapping EMs for REMs
 - V2.0.0 (23/06/2015) - New folder structure and swapping Grunt for Gulp
