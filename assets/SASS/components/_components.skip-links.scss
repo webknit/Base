@@ -1,0 +1,21 @@
+.c-skip {
+    
+    &__item {
+        left: -999em;
+        position: absolute;
+        width: 990em;
+
+        &:active, 
+        &:focus {
+            background-color: #ffffff;
+            border: 3px #6acac5 solid;
+            color: #000000;
+            left: 0;
+            top: 0;
+            padding: 15px;
+            text-decoration: none;
+            width: auto;
+            z-index: 1; 
+        }
+    }
+}

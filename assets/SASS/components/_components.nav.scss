@@ -1,0 +1,135 @@
+$nav-break: 800px;
+
+.c-nav {
+    display: none;
+    margin-top: 3.5rem;
+
+    @include breakpoint($nav-break) {
+        border: none;
+        display: block;
+        margin-top: 0;
+    }
+
+    &--active {
+        display: block;
+    }
+
+    &__li {
+        display: block;
+
+        @include breakpoint($nav-break) {
+            display: inline-block;
+        }
+    }
+
+    &__a {
+        display: block;
+        padding: 1.2rem 0.5rem;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+
+        @include breakpoint($nav-break) {
+            margin: 0 0.3rem;
+            padding: 0 0.5rem;
+        }
+
+        &:after {
+            @include breakpoint($nav-break) {
+                background: transparent;
+                border-radius: 0.25rem;
+                content: "";
+                display: block;
+                height: 5px;
+                left: 0;
+                margin-top: 0.5rem;
+                position: absolute;
+                transition: width 0.2s ease-in-out;
+                width: 0%;
+            }
+        }
+
+        &:hover, &:focus {
+
+            @include breakpoint(medium) {
+                background-color: transparent;
+            }
+
+            // Not on Nav items that are active (e.g on that page)
+            &:not(.c-nav__a--active) {
+                &:after {
+                    @include breakpoint($nav-break) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &--active {
+            font-weight: $font-weight-bold;
+
+            &:after {
+                @include breakpoint($nav-break) {
+                    height: 3px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.c-nav-hamburger {
+    float: right;
+    height: 30px;
+    position: absolute;
+    right: 1rem;
+    top: 20px;
+    width: 38px;
+
+    @include breakpoint($nav-break) {
+        display: none;
+    }
+    
+    &__line {
+        background: red;
+        border-radius: 0.125rem;
+        display: block;
+        height: 4px;
+        margin-bottom: 6px;
+        position: absolute;
+        transform-origin: left center;
+        transition: top ease-in-out 0.3s,
+                    opacity ease-in-out 0.1s,
+                    transform ease-in-out 0.3s;
+        width: 100%;
+
+        &:nth-child(1) {
+            top: 0;
+
+            .c-nav-hamburger--active & {
+                top: -1px;
+                transform: rotate(45deg);      
+            }
+        }
+
+        &:nth-child(2) {
+            top: 13px;
+
+            .c-nav-hamburger--active & {
+                opacity: 0;
+                width: 0%;
+            }
+        }
+
+        &:nth-child(3) {
+            top: 26px;
+
+            .c-nav-hamburger--active & {
+                top: 26px;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}

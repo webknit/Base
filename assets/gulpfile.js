@@ -173,7 +173,7 @@ gulp.task('default', ['scripts:lint', 'scripts:bundle', 'styles:dev', 'sprites']
 	// Watch .scss files
 	gulp.watch(paths.assets.css + '/**/*.scss', ['styles:dev']);
 	// Watch .html files
-	gulp.watch([paths.assets.html + 'Views/*.{php,html,cshtml}', paths.assets.html + 'index.{php,html,cshtml}'], ['templates']);
+	gulp.watch([paths.assets.html + '**/*.{php,html,cshtml}', paths.assets.html + 'index.{php,html,cshtml}'], ['templates']);
 
 });
 

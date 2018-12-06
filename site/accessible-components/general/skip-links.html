@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	
+	<meta charset="utf-8">
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="/css/style.css" media="screen">
+    
+    <style>
+    
+        .section {
+            background-color: red;
+            display: block;
+            height: 800px;
+            width: 100%;
+        }
+
+        .section#main {
+            background-color: green;
+        }
+
+        .section#footer {
+            background-color: purple;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <div class="o-container">
+
+    <a href="/index.html">Back to main page</a>
+
+        <h1>Skip links</h1>
+        
+        <div class="c-skip">
+
+            <a href="#nav" class="c-skip__item">Skip to navigation</a>
+            <a href="#main" class="c-skip__item">Skip to main content</a>
+            <a href="#footer" class="c-skip__item">Skip to footer</a>
+
+        </div>
+        
+        <div class="section" id="nav">Nav</div>
+        <div class="section" id="main"><a href="#">Main</a></div>
+        <div class="section" id="footer">Footer</div>
+
+    </div>
+
+    <script>
+    
+    // Get the links
+    const skipLinks = Array.from(document.getElementsByClassName('c-skip__item'));
+
+    // Loop through and get the href, then focus on the id for improved keyboard accessibility
+    skipLinks.forEach(link => link.addEventListener('click', (e) => {
+
+        document.getElementById(link.getAttribute("href").substr(1)).focus();
+
+    }));
+    
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	
+	<meta charset="utf-8">
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="/css/style.css" media="screen">
+
+</head>
+
+<body>
+
+    <div class="o-container">
+
+        <a href="/index.html">Back to main page</a>
+
+        <h1>Nav menu</h1>
+        
+        <header id="header">
+
+            <button class="c-nav-hamburger" role="button" id="hamburger-nav-btn" aria-expanded="false" aria-controls="nav-list" tabindex="0">
+        
+                <span class="u-visually-hidden">Open navigation menu</span>
+
+                <span class="c-nav-hamburger__line" aria-hidden="true"></span>
+                <span class="c-nav-hamburger__line" aria-hidden="true"></span>
+                <span class="c-nav-hamburger__line" aria-hidden="true"></span>
+
+            </button>
+
+            <nav class="c-nav" id="nav" aria-labelledby="main-nav">
+
+                <p id="main-nav" class="u-visually-hidden">Main Navigation</p>
+
+                <ul id="nav-list" class="c-nav__ul">
+
+                    <li class="c-nav__li">
+
+                        <a class="c-nav__a" href="#">Employers</a>
+
+                    </li>
+
+                    <li class="c-nav__li">
+
+                        <a class="c-nav__a" href="#">Candidates</a>
+
+                    </li>
+
+                    <li class="c-nav__li">
+
+                        <a class="c-nav__a c-nav__a--active" href="#">About Focus <span class="u-a11y">(Current page)</span></a>
+
+                    </li>
+
+                    <li class="c-nav__li">
+
+                        <a class="c-nav__a" href="#">Contact Us</a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </header>
+
+    </div>
+
+    <script>
+    
+        // Navigation
+        const header = document.getElementById('header');
+        const nav = document.getElementById('nav');
+        const navList = document.getElementById('nav-list');
+        const hamburgerNavBtn = document.getElementById('hamburger-nav-btn');
+
+        let navOpen = false;
+
+        function toggleNav(focusOnEl) {
+
+            nav.classList.toggle('c-nav--active');
+            header.classList.toggle('c-header--nav-active');
+            hamburgerNavBtn.classList.toggle('c-nav-hamburger--active');
+
+            navOpen = !navOpen;
+
+            // Only focus on the element if the nav is open and focusOnEl true (using a keyboard)
+            if(navOpen && focusOnEl) navList.firstElementChild.firstElementChild.focus();
+
+        }
+
+        hamburgerNavBtn.addEventListener('click', (e) => {
+            
+            toggleNav();
+
+        });
+
+        // Have to add a keydown event as it's a div so has no native click events
+        hamburgerNavBtn.addEventListener('keydown', (e) => {
+
+            if(e.which === 13) toggleNav(true);  
+
+        });
+    
+    </script>
+
+</body>
+</html>
+
