@@ -12,41 +12,48 @@ input,
 textarea {
 	border: 1px solid $col-black;
 	border-radius: 0.125rem;
-	display: block;
+	display: inline-block;
 	font-family: $font-stack-base;
 	font-size: $font-size-base;
-	margin: 0;
-	margin-bottom: 1.250rem;
+	margin: 0 0 1.5rem;
 	outline: none;
 	padding: 1rem;
 	width: 100%;
 }
 
-.input[type=email] {
-	
+.e-input {
+
+	&--checkbox,
+	&--radio {
+		margin-right: 0.3rem;
+		width: auto;
+	}
+
+	&--checkbox {
+		
+	}
+
+	&--submit {
+		background: $col-black;
+		border: none;
+		color: $col-white;
+		cursor: pointer;
+		display: inline-block;
+		padding: 1rem;
+		width: auto;
+
+		&:hover {
+			background: #e2766f;
+		}
+	}
 }
 
-input {
-	
+.e-label {
+	display: inline-block;
+	margin-bottom: 0.5rem;
 }
 
-textarea {
-	
-}
-
-input[type=submit] {
-	background: $col-black;
-	border: none;
-	color: $col-white;
-	cursor: pointer;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    width: auto;
-    &:hover {
-    	background: #e2766f;
-    }
-}
-
-input[type=checkbox] {
-	width: auto;
+.e-legend {
+	display: inline-block;
+	margin-bottom: 1rem;
 }

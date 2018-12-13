@@ -22,26 +22,90 @@
         <h1>Checkboxes</h1>
 
         <h2>Basic markup</h2>
-        
-        <fieldset>
 
-            <legend>Select your pizza toppings:</legend>
+        <form class="c-form">
 
-            <input id="ham" type="checkbox" name="toppings" value="ham">
-            <label for="ham">Ham</label>
+            <label class="e-label" for="name">Name</label>
+            <input type="text" class="e-input e-input--text" id="name" name="name" aria-describedby="name-error" data-validation="not-empty" data-error-msg="Error message" />
+            <span class="c-form__error" id="name-error" role="alert">Error</span>
 
-            <input id="pepperoni" type="checkbox" name="toppings" value="pepperoni">
-            <label for="pepperoni">Pepperoni</label>
+            <label class="e-label" for="email">Email</label>
+            <input type="tel" class="e-input e-input--tel" id="email" name="email" aria-describedby="email-error" />
+            <span class="c-form__error" id="email-error" role="alert"></span>
 
-            <input id="mushrooms" type="checkbox" name="toppings" value="mushrooms">
-            <label for="mushrooms">Mushrooms</label>
-            
-            <input id="olives" type="checkbox" name="toppings" value="olives">
-            <label for="olives">Olives</label>
+            <label class="e-label" for="tel">Telephone</label>
+            <input type="tel" class="e-input e-input--tel" id="tel" name="tel" aria-describedby="tel-error" />
+            <span class="c-form__error" id="tel-error" role="alert"></span>
 
-        </fieldset>
+            <label class="e-label" for="comment">Comment</label>
+            <textarea class="e-textarea" id="comment" name="comment" aria-describedby="comment-error"></textarea>
+            <span class="c-form__error" id="comment-error" role="alert"></span>
+
+            <fieldset class="e-fieldset">
+
+                <legend class="e-legend">Who is your favorite 19th century scientist</legend>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--checkbox" id="bell" type="checkbox" name="scientist" value="bell">
+                    <label class="e-label" for="bell">Alexander Graham Bell</label>
+
+                </div>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--checkbox" id="curry" type="checkbox" name="scientist" value="curry">
+                    <label class="e-label" for="curry">Marie Curie</label>
+
+                </div>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--checkbox" id="lovelace" type="checkbox" name="scientist" value="lovelace">
+                    <label class="e-label" for="lovelace">Ada Lovelace</label>
+
+                </div>
+
+            </fieldset>
+
+             <fieldset class="e-fieldset">
+
+                <legend class="e-legend">Who is your favorite football team?</legend>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--radio" id="manu" type="radio" name="football" value="manu">
+                    <label class="e-label" for="manu">Manchester United</label>
+
+                </div>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--radio" id="chelsea" type="radio" name="football" value="chelsea">
+                    <label class="e-label" for="chelsea">Chelsea</label>
+
+                </div>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--radio" id="manc" type="radio" name="football" value="manc">
+                    <label class="e-label" for="manc">Man City</label>
+
+                </div>
+
+            </fieldset>
+
+            <input type="submit" class="e-input e-input--submit" value="Submit" />
+
+        </form>
 
     </div>
+
+    <script>
+    
+        
+    
+    </script>
 
 </body>
 </html>
