@@ -1,4 +1,73 @@
 .c-form {
 
-    
+    // Used for groups of radios/checkbox and labels
+    &__input-group {
+        
+    }
+}
+
+.styled-checkbox {
+
+    .e-input--checkbox {
+        height: 0;
+        left: 0;
+        margin: 0;
+        opacity: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        width: 0;
+
+        &+ {
+            .e-label {
+                padding-left: 30px;
+                position: relative;
+
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                }
+
+                &:before {
+                    background: transparent;
+                    border: 2px solid #181340;
+                    height: 20px;
+                    left: 0;
+                    top: 0;
+                    width: 20px;            
+                }
+            }
+        }
+
+        &:checked + {
+            .e-label {
+
+                &:after {
+                    background: transparent;
+                    border: solid;
+                    border-color: #181340;
+                    border-top-color: transparent;
+                    border-width: 0 0 3px 3px;
+                    left: 4px;
+                    height: 7px;
+                    top: 6px;
+                    transform: rotate(-45deg);
+                    width: 12px;
+                    zoom: 1;
+                }
+            }
+        }
+
+        &:focus + {
+            .e-label {
+                padding-left: 30px;
+                position: relative;
+
+                &:before {
+                    box-shadow: 0 0 0 3px #ffbf47;
+                }
+            }
+        }
+    }
 }

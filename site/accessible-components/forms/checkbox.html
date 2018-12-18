@@ -21,31 +21,136 @@
 
         <h1>Checkboxes</h1>
         
-        <fieldset>
+        <fieldset class="e-fieldset">
 
-            <legend class="e-legend">Select your pizza toppings:</legend>
+            <legend class="e-legend">Who is your favorite 19th century scientist</legend>
 
-            <input id="ham" type="checkbox" name="toppings" value="ham" class="e-checkbox">
-            <label for="ham" class="e-label">Ham</label>
+            <div class="c-form__input-group">
 
-            <br><br>
+                <input class="e-input e-input--checkbox" id="bell" type="checkbox" name="scientist" value="bell">
+                <label class="e-label" for="bell">Alexander Graham Bell</label>
 
-            <input id="pepperoni" type="checkbox" name="toppings" value="pepperoni" class="e-checkbox">
-            <label for="pepperoni" class="e-label">Pepperoni</label>
+            </div>
 
-            <br><br>
+            <div class="c-form__input-group">
 
-            <input id="mushrooms" type="checkbox" name="toppings" value="mushrooms" class="e-checkbox">
-            <label for="mushrooms" class="e-label">Mushrooms</label>
+                <input class="e-input e-input--checkbox" id="curry" type="checkbox" name="scientist" value="curry">
+                <label class="e-label" for="curry">Marie Curie</label>
 
-            <br><br>
-            
-            <input id="olives" type="checkbox" name="toppings" value="olives" class="e-checkbox">
-            <label for="olives" class="e-label">Olives</label>
+            </div>
+
+            <div class="c-form__input-group">
+
+                <input class="e-input e-input--checkbox" id="lovelace" type="checkbox" name="scientist" value="lovelace">
+                <label class="e-label" for="lovelace">Ada Lovelace</label>
+
+            </div>
 
         </fieldset>
 
+        <h2>Styled Checkboxes</h2>
+
+        <fieldset class="e-fieldset styled-checkbox">
+
+            <legend class="e-legend">Pick one</legend>
+
+            <div class="c-form__input-group">
+
+                <input class="e-input e-input--checkbox" id="a" type="checkbox" name="a1" value="a">
+                <label class="e-label" for="a">An option</label>
+
+            </div>
+
+            <div class="c-form__input-group">
+
+                <input class="e-input e-input--checkbox" id="b" type="checkbox" name="a1" value="b">
+                <label class="e-label" for="b">Be another option</label>
+
+            </div>
+
+            <div class="c-form__input-group">
+
+                <input class="e-input e-input--checkbox" id="c" type="checkbox" name="a1" value="c">
+                <label class="e-label" for="c">Choose me</label>
+
+            </div>
+
+        </fieldset>
+
+        <h2>Pick at least 1</h2>
+
+        <form class="js-form">
+
+            <fieldset class="e-fieldset js-form-check js-form-check-minpick" data-minpick="3" data-error="Pick at least 1">
+
+                <legend class="e-legend">Who is your favorite 19th century scientist</legend>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--checkbox" id="bell" type="checkbox" name="scientist" value="bell">
+                    <label class="e-label" for="bell">Alexander Graham Bell</label>
+
+                </div>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--checkbox" id="curry" type="checkbox" name="scientist" value="curry">
+                    <label class="e-label" for="curry">Marie Curie</label>
+
+                </div>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--checkbox" id="lovelace" type="checkbox" name="scientist" value="lovelace">
+                    <label class="e-label" for="lovelace">Ada Lovelace</label>
+
+                </div>
+
+            </fieldset>
+
+            <button type="submit">Test submission</button>
+
+        </form>
+
     </div>
+
+    <script>
+
+        var checkForms = Array.from(document.querySelectorAll('.js-form'));
+
+        checkForms.forEach(form => form.addEventListener('submit', (e) => {
+
+            checkForm(form, e);
+
+        }));
+
+        var checkForm = function(form, e) {
+
+            let formSubmit = false;
+
+            const formEls = Array.from(document.querySelectorAll('.js-form-check'));
+
+            formEls.forEach((el) => {
+
+                if(el.classList.contains('js-form-check-minpick')) {
+
+                    checkMinPick(el);
+
+                }
+
+            })
+
+            function checkMinPick(el) {
+
+                console.log(el)
+
+            }
+
+            if(!formSubmit) e.preventDefault();
+
+        }
+    
+    </script>
 
 </body>
 </html>

@@ -4,7 +4,7 @@ input[type=tel],
 input[type=url],
 input[type=search],
 input[type=submit] {
-	appearance: none;
+	//appearance: none;
 	border-radius: 0;
 }
 
@@ -16,7 +16,6 @@ textarea {
 	font-family: $font-stack-base;
 	font-size: $font-size-base;
 	margin: 0 0 1.5rem;
-	outline: none;
 	padding: 1rem;
 	width: 100%;
 }
@@ -25,7 +24,7 @@ textarea {
 
 	&--checkbox,
 	&--radio {
-		margin-right: 0.3rem;
+		margin: 0 0.3rem 0 0;
 		width: auto;
 	}
 
@@ -56,4 +55,8 @@ textarea {
 .e-legend {
 	display: inline-block;
 	margin-bottom: 1rem;
+}
+
+.e-fieldset {
+	margin-bottom: 1.5rem; 
 }
