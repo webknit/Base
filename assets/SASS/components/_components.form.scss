@@ -5,7 +5,8 @@
         
     }
 
-    &__error {
+    &__error,
+    &__alert {
         color: red;
         display: none;
 

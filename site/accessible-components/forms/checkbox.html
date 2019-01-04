@@ -77,11 +77,11 @@
 
         </fieldset>
 
-        <h2>Pick at least 1</h2>
+        <h2>Pick at least 1 (on submit)</h2>
 
-        <form class="js-form">
+        <form class="e-form js-form">
 
-            <fieldset class="e-fieldset js-form-check js-form-check-minpick" data-minpick="2" data-error="Pick at least 1">
+            <fieldset class="e-fieldset js-form-check js-form-check-minpick" data-minpick="1" data-error="Pick at least 1">
 
                 <legend class="e-legend">Who is your favorite 19th century scientist</legend>
 
@@ -106,7 +106,47 @@
 
                 </div>
 
-                <span class="c-form__error" id="min-pick" role="alert">You must select at least 2</span>
+                <span class="c-form__error" id="min-pick-a" role="alert">You must select at least 2</span>
+
+            </fieldset>
+
+            <button type="submit">Test submission</button>
+
+        </form>
+
+        <br><br>
+
+        <h2>Pick at least 2 live</h2>
+
+        <form class="js-form-live">
+
+            <fieldset class="e-fieldset js-form-check js-form-check-minpick" data-minpick="2" data-error="Pick at least 2">
+
+                <legend class="e-legend">Who is your favorite 19th century scientist</legend>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--checkbox" id="b1" type="checkbox" name="b" value="bell" aria-describedby="min-pick-b">
+                    <label class="e-label" for="b1">Alexander Graham Bell</label>
+
+                </div>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--checkbox" id="b2" type="checkbox" name="b" value="curry" aria-describedby="min-pick-b">
+                    <label class="e-label" for="b2">Marie Curie</label>
+
+                </div>
+
+                <div class="c-form__input-group">
+
+                    <input class="e-input e-input--checkbox" id="b3" type="checkbox" name="b" value="lovelace" aria-describedby="min-pick-b">
+                    <label class="e-label" for="b3">Ada Lovelace</label>
+
+                </div>
+
+                <span class="c-form__error" id="min-pick-b"></span>
+                <span class="c-form__alert u-a11y" role="alert"></span>
 
             </fieldset>
 
@@ -126,13 +166,60 @@
 
         }));
 
-        var checkForm = function(form, e) {
+        var checkFormsLive = Array.from(document.querySelectorAll('.js-form-live'));
+
+        checkFormsLive.forEach((form) => {
+
+            form.addEventListener('submit', (e) => {
+
+                resetFormAlerts(form);
+                resetFormErrors(form);
+                checkForm(form, e);
+
+            });
+
+            var checkFormsLiveInputs = Array.from(form.querySelectorAll('input'));
+
+            checkFormsLiveInputs.forEach(input => input.addEventListener('change', (e) => {
+
+                resetFormErrors(form);
+                checkForm(form, e, true);
+            
+            }));
+
+        });
+
+        function resetFormErrors(form) {
+
+            const formErrors = Array.from(form.querySelectorAll('.c-form__error'));
+
+            formErrors.forEach((el) => {
+
+                el.classList.remove('c-form__error--active');
+                el.innerHTML = '';
+
+            });
+
+        }
+
+        function resetFormAlerts(form) {
+
+            const formAlerts = Array.from(form.querySelectorAll('.c-form__alert'));
+
+            formAlerts.forEach((el) => {
+
+                el.classList.remove('c-form__alert--active');
+                el.innerHTML = '';
+
+            });
+
+        }
+
+        var checkForm = function(form, e, live) {
 
             let formSubmit = true;
 
             const formEls = Array.from(form.querySelectorAll('.js-form-check'));
-
-            resetFormErrors();
 
             formEls.forEach((el) => {
 
@@ -144,29 +231,32 @@
 
             });
 
-            function resetFormErrors() {
-
-                const formErrors = Array.from(form.querySelectorAll('.c-form__error'));
-
-                formErrors.forEach((el) => {
-
-                    el.classList.remove('c-form__error--active');
-
-                });
-
-            }
-
             function checkMinPick(el) {
 
-                const minAmountRequired = el.getAttribute('data-minpick');
-
                 const checkboxes = Array.from(el.querySelectorAll('.e-input--checkbox:checked'));
+                const checkboxesAll = Array.from(el.querySelectorAll('.e-input--checkbox'));
+
+                const minAmountRequired = el.getAttribute('data-minpick');
+                const errorText = el.getAttribute('data-error') + '. Currently ' + checkboxes.length + ' picked.';
 
                 if(checkboxes.length < minAmountRequired) {
 
                     formSubmit = false;
 
+                    el.querySelectorAll('.c-form__error')[0].innerHTML = errorText;
                     el.querySelectorAll('.c-form__error')[0].classList.add('c-form__error--active');
+
+                    if(!live) {
+
+                        el.querySelectorAll('.c-form__alert')[0].innerHTML = errorText;
+                        el.querySelectorAll('.c-form__alert')[0].classList.add('c-form__alert--active');
+
+                        setTimeout( function() { 
+
+                            resetFormAlerts(form);
+
+                        }, 1000);
+                    }
 
                 }
 
