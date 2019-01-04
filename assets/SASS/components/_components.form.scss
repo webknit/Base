@@ -4,6 +4,15 @@
     &__input-group {
         
     }
+
+    &__error {
+        color: red;
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
 }
 
 .styled-checkbox {

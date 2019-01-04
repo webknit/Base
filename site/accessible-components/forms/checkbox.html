@@ -81,30 +81,32 @@
 
         <form class="js-form">
 
-            <fieldset class="e-fieldset js-form-check js-form-check-minpick" data-minpick="3" data-error="Pick at least 1">
+            <fieldset class="e-fieldset js-form-check js-form-check-minpick" data-minpick="2" data-error="Pick at least 1">
 
                 <legend class="e-legend">Who is your favorite 19th century scientist</legend>
 
                 <div class="c-form__input-group">
 
-                    <input class="e-input e-input--checkbox" id="bell" type="checkbox" name="scientist" value="bell">
-                    <label class="e-label" for="bell">Alexander Graham Bell</label>
+                    <input class="e-input e-input--checkbox" id="a1" type="checkbox" name="a" value="bell">
+                    <label class="e-label" for="a1">Alexander Graham Bell</label>
 
                 </div>
 
                 <div class="c-form__input-group">
 
-                    <input class="e-input e-input--checkbox" id="curry" type="checkbox" name="scientist" value="curry">
-                    <label class="e-label" for="curry">Marie Curie</label>
+                    <input class="e-input e-input--checkbox" id="a2" type="checkbox" name="a" value="curry">
+                    <label class="e-label" for="a2">Marie Curie</label>
 
                 </div>
 
                 <div class="c-form__input-group">
 
-                    <input class="e-input e-input--checkbox" id="lovelace" type="checkbox" name="scientist" value="lovelace">
-                    <label class="e-label" for="lovelace">Ada Lovelace</label>
+                    <input class="e-input e-input--checkbox" id="a3" type="checkbox" name="a" value="lovelace">
+                    <label class="e-label" for="a3">Ada Lovelace</label>
 
                 </div>
+
+                <span class="c-form__error" id="min-pick" role="alert">You must select at least 2</span>
 
             </fieldset>
 
@@ -126,9 +128,11 @@
 
         var checkForm = function(form, e) {
 
-            let formSubmit = false;
+            let formSubmit = true;
 
-            const formEls = Array.from(document.querySelectorAll('.js-form-check'));
+            const formEls = Array.from(form.querySelectorAll('.js-form-check'));
+
+            resetFormErrors();
 
             formEls.forEach((el) => {
 
@@ -138,11 +142,33 @@
 
                 }
 
-            })
+            });
+
+            function resetFormErrors() {
+
+                const formErrors = Array.from(form.querySelectorAll('.c-form__error'));
+
+                formErrors.forEach((el) => {
+
+                    el.classList.remove('c-form__error--active');
+
+                });
+
+            }
 
             function checkMinPick(el) {
 
-                const minAmountPicked = el.getAttribute('data-minpick');
+                const minAmountRequired = el.getAttribute('data-minpick');
+
+                const checkboxes = Array.from(el.querySelectorAll('.e-input--checkbox:checked'));
+
+                if(checkboxes.length < minAmountRequired) {
+
+                    formSubmit = false;
+
+                    el.querySelectorAll('.c-form__error')[0].classList.add('c-form__error--active');
+
+                }
 
             }
 
