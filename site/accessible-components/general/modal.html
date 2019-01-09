@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	
+	<meta charset="utf-8">
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" href="/css/style.css" media="screen">
+
+    <style>
+    
+        .dialog {
+            align-items: center;
+            background: red;
+            display: none;
+            height: 100%;
+            justify-content: center;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        .dialog--active {
+            display: flex;
+        }
+
+        .dialog__content {
+            background: white;
+            height: auto;
+            padding: 1rem;
+            position: relative;
+            width: 500px;
+        }
+
+        .dialog__close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    
+    </style>
+
+</head>
+
+<body>
+
+    <div class="o-container">
+
+    <a href="/index.html">Back to main page</a>
+
+    <h1>Model Dialog</h1>
+
+    <p>alertdialog is for alerts and dialogs can be for information and such</p>
+
+    <button id="js-dialog-open">Open Modal</button>
+
+    <div role="dialog" id="dialog" aria-labelledby="dialog-label" class="dialog">
+
+        <div class="dialog__content">
+
+            <h2 id="dialog-label">Add Delivery Address</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
+
+            <form>
+
+                <label class="e-label" for="name">Name</label>
+                <input type="text" class="e-input e-input--text" id="name" name="name" />
+
+                <input type="submit" />
+
+            </form>
+
+            <button class="dialog__close" id="js-dialog-close">Close</button>
+
+        </div>
+       
+    </div>
+
+    <script>
+    
+        const dialogOpenBtn = document.getElementById('js-dialog-open');
+        const dialogCloseBtn = document.getElementById('js-dialog-close');
+        const dialog = document.getElementById('dialog');
+
+        let lastActiveEl;
+
+        dialogOpenBtn.addEventListener('click', (e) => {
+
+            lastActiveEl = document.activeElement;
+
+            dialogOpen(dialog);
+
+        });
+
+        dialogCloseBtn.addEventListener('click', (e) => {
+
+            dialogClose();
+
+        });
+
+        function dialogClose() {
+
+            dialog.classList.remove('dialog--active');
+            lastActiveEl.focus();
+
+        }
+
+        function dialogOpen(el) {
+
+            el.classList.add('dialog--active');
+
+            const focusableEls = el.querySelectorAll('a[href], button, textarea, input[type="text"], input[type="radio"], input[type="checkbox"], select');
+            const firstFocusableEl = focusableEls[0];  
+            const lastFocusableEl = focusableEls[focusableEls.length - 1];
+
+            firstFocusableEl.focus();
+
+            el.addEventListener('keydown', function(e) {
+
+                if (e.key === 'Tab' || e.keyCode === 9) {
+
+                    if ( e.shiftKey ) {
+
+                        if (document.activeElement === firstFocusableEl) {
+
+                            lastFocusableEl.focus();
+                            e.preventDefault();
+
+                        }
+
+                    } else {
+
+                        if (document.activeElement === lastFocusableEl) {
+
+                            firstFocusableEl.focus();
+                            e.preventDefault();
+
+                        }
+                    }
+                }
+            });
+
+        }
+
+    
+    </script>
+    
+
+</body>
+</html>
+
